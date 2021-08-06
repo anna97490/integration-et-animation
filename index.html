@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>ohmyfood</title>
+    <link rel="stylesheet" href="./.style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext" rel="stylesheet">
+    <head>
+      <script src="https://kit.fontawesome.com/8145cfb253.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!--LOADER SPINNER-->
+    <div class="load-spinner">
+      <svg class="spin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+        <path fill="#9356DC"  d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+            <animateTransform 
+              attributeName="transform" 
+              attributeType="XML" 
+              type="rotate"
+              dur="2s" 
+              from="0 50 50"
+              to="360 50 50" 
+              repeatCount="indefinite" />
+          </path>
+          <path fill=#FF79DA d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+            <animateTransform 
+              attributeName="transform" 
+              attributeType="XML" 
+              type="rotate"
+              dur="1s" 
+              from="0 50 50"
+              to="-360 50 50" 
+              repeatCount="indefinite" />
+          </path>
+          <path fill=#99E2D0 d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5L82,35.7z">
+            <animateTransform 
+              attributeName="transform" 
+              attributeType="XML" 
+              type="rotate"
+              dur="2s" 
+              from="0 50 50"
+              to="360 50 50" 
+              repeatCount="indefinite" />
+          </path>
+      </svg>
+    </div>
+    <!--HEADER-->
+    <header>
+      <div class="header__logo">
+        <img src="images/logo/ohmyfood@2x.svg">
+      </div>
+      <div class="header__localisation">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Paris, Belleville</span>
+      </div>
+    </header>
+
+    <!--CORPS DE PAGE-->
+    <main>
+      <section class="explore">
+        <span>Réservez le menu qui vous convient</span>
+        <span>Découvrez des restaurants d'exception, sélectionnés par nos soins</span>
+        <a href="#" class="explore_btn">Explorer nos restaurants</a>
+      </section>
+
+      <!--FONCTIONNEMENT-->
+      <aside class="functioning">
+        <div class="functioning__tabs">
+          <a href="#">
+            <ol>
+              <li>
+                <span><i class="fas fa-solid fa-mobile-alt"></i>Choisissez un restaurant</span>
+              </li>
+              <li>
+                <span><i class="fas fa-solid fa-list-ul">Composez votre menu</i></span>
+              </li>
+              <li>
+                <span><i class="fas fa-solid fa-store"></i>Dégustez au restaurant</span>
+              </li>
+            </ol>
+          </a>
+
+        </div>
+
+      <!--RESTAURANTS-->
+      <!--La palette du goût-->
+      <section class="restaurants">
+        <h2>Restaurants</h2>
+          <a href="lapalettedugout.html">
+            <div class="restaurants__cards">
+              <div class="cards__img">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image La palette du goût">
+                <span>Nouveau</span>
+              </div>
+              <div class="cards__heart">
+                <div class="cards__heart--empty">
+                  <i class="fas fa-solid fa-heart"></i>
+                </div>
+                <div class="cards__heart--full">
+                  <i class="fas fa-solid fa-heart"></i>
+              </div>
+              <div class="cards__infos">
+                <h3>La palette du goût</h3>
+                <span>Ménilmontant</span>
+              </div>
+            </div>
+          </a>
+          
+        <!--La note enchantée-->
+        <a href="lanoteenchantee.html">
+          <div class="restaurants__cards">
+            <div class="cards__img">
+              <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image La note enchantée">
+              <span>Nouveau</span>
+            </div>
+            <div class="cards__heart">
+              <div class="cards__heart--empty">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+              <div class="cards__heart--full">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+            <div class="cards__infos">
+              <h3>La note enchantée</h3>
+              <span>Charonne</span>
+            </div>
+          </div>
+        </a>
+
+        <!--A la française-->
+        <a href="alafrancaise.html">
+          <div class="restaurants__cards">
+            <div class="cards__img">
+              <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image À la française">
+            </div>
+            <div class="cards__heart">
+              <div class="cards__heart--empty">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+              <div class="cards__heart--full">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+            <div class="cards__infos">
+              <h3>À la française</h3>
+              <span>Cité rouge</span>
+            </div>
+          </div>
+        </a>
+
+        <!--Le délice des sens-->
+        <a href="ledelicedessens.html">
+          <div class="restaurants__cards">
+            <div class="cards__img">
+              <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image À la française">
+            </div>
+            <div class="cards__heart">
+              <div class="cards__heart--empty">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+              <div class="cards__heart--full">
+                <i class="fas fa-solid fa-heart"></i>
+              </div>
+            <div class="cards__infos">
+              <h3>Le délice des sens</h3>
+              <span>Folie-Méricourt</span>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
+
+  <!--PIED DE PAGE-->
+  <footer>
+    <div class="footer__container">
+      <h3>ohmyfood</h3>
+      <a href="#">
+        <ul>
+          <li>
+            <span><i class="fas fa-solid fa-utensils"></i>Proposer un restaurant</span>
+          </li>
+          <li>
+            <span><i class="fas fa-solid fa-hands-helping"></i>Devenir partenaire</span>
+          </li>
+          <li>
+            <span>Mentions légales</span>
+          </li>
+          <li>
+            <address><a href="mailto:Ohmyfood@yz.org">Contact</a></address>
+          </li>
+        </ul>
+      </a>
+    </div>
+  </footer>
+</html>
