@@ -1,0 +1,16 @@
+//Colors
+$color-primary: #9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$color-white:#ffffff;
+$color-grey: rgb(53,53,53);
+$color-grey2: lighten($color-grey, 65%);
+$color-grey3: lighten($color-grey, 75%);
+
+
+//Media Queries
+$breakpoint:(
+    tablet: 768px,
+    laptop: 1024px,
+    desktop: 1400px
+);

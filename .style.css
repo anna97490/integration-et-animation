@@ -1,14 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 body {
-  border: 2px solid black;
+  margin: 0;
 }
 
-.functioning, .restaurants, .footer__container {
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  text-align: center;
+}
+.header__localisation {
+  text-align: center;
+  background-color: #dbdbdb;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.explore span {
   border: 2px solid red;
 }
 
-.spin {
-  width: 10rem;
-  height: 10rem;
+body, footer {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=.style.css.map */

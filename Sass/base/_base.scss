@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    &__logo {
+        text-align: center;
+    }
+    &__localisation {
+        text-align: center;
+        background-color: $color-grey2 ;
+    }
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-grey3;
+}
+
+.explore span {
+    border: 2px solid red;
+}
