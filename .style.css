@@ -9,10 +9,10 @@ main {
   flex-direction: column;
 }
 
-.header__logo {
+header__logo {
   text-align: center;
 }
-.header__localisation {
+header__localisation {
   text-align: center;
   background-color: #dbdbdb;
 }
