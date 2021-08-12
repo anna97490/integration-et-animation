@@ -1,3 +1,9 @@
-.header{
-    
+header {
+    &__logo {
+        text-align: center;
+    }
+     &__localisation {
+        text-align: center;
+        background-color: $color-grey2 ;
+    }
 }

@@ -7,7 +7,7 @@ main {
     flex-direction: column;
 }
 
-header {
+.header {
     &__logo {
         text-align: center;
     }
@@ -26,4 +26,12 @@ header {
 
 .explore span {
     border: 2px solid red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    width: 100%;
 }

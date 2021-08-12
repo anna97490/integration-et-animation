@@ -9,27 +9,94 @@ main {
   flex-direction: column;
 }
 
-header__logo {
+.header__logo {
   text-align: center;
 }
-header__localisation {
+.header__localisation {
   text-align: center;
-  background-color: #dbdbdb;
+  background-color: #cecece;
 }
 
 .explore {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #e8e8e8;
 }
 
 .explore span {
   border: 2px solid red;
 }
 
+a {
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+}
+
 body, footer {
   font-family: "Roboto", sans-serif;
+}
+
+header__logo {
+  text-align: center;
+}
+header__localisation {
+  text-align: center;
+  background-color: #cecece;
+}
+
+.functioning {
+  display: flex;
+}
+.functioning__tabs {
+  width: 15%;
+  border: 3px solid red;
+}
+@media all and (min-width: 768px) {
+  .functioning {
+    display: flex;
+  }
+}
+@media all and (min-width: 1400px) {
+  .functioning {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 3px solid purple;
+  width: 40%;
+}
+@media all and (min-width: 768px) {
+  .restaurants {
+    display: flex;
+  }
+}
+@media all and (min-width: 1400px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.restaurants__title {
+  width: 100%;
+}
+.restaurants__cards {
+  width: 100%;
+  border: 3px solid blue;
+}
+.restaurants__img {
+  width: 20px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid orange;
 }
 
 /*# sourceMappingURL=.style.css.map */

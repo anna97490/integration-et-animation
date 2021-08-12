@@ -1,0 +1,56 @@
+.functioning {
+    display: flex;
+    
+    &__tabs {
+        width: 15%;
+        border: 3px solid red;
+    }
+    @include small{
+        display: flex;
+    }
+    @include medium {
+        
+    }
+    @include large{
+        
+    }
+    @include x-large{
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 3px solid purple;
+    width: 40%;
+    @include small{
+        display: flex;
+    }
+    @include medium {
+        
+    }
+    @include large{
+        
+    }
+    @include x-large{
+        display: flex;
+        flex-direction: row;
+    } 
+    &__title {
+        width: 100%;
+    }
+    &__cards {
+        width: 100%;
+        border: 3px solid blue;
+    }
+    &__img {
+        width: 20px;
+        height: 100px;
+        object-fit: cover;
+        border: 3px solid orange;
+    }
+}
+
