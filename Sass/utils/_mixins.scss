@@ -1,0 +1,21 @@
+//Media Queries
+@mixin small {
+    @media (min-width: $small-min) and (max-width: $small-max) {
+      @content;
+    }
+}
+@mixin medium {
+    @media (min-width: $medium-min) and (max-width: $medium-max) {
+        @content;
+      }
+}
+@mixin large {
+    @media (min-width: $large-min) and (max-width: $large-max) {
+        @content;
+    }
+}
+@mixin x-large {
+    @media (min-width: $x-large-min){
+        @content;
+    }
+}

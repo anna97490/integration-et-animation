@@ -2,18 +2,20 @@
 $color-primary: #9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
+$color-tertiarydark: darken($color-tertiary, 40%);
 $color-white:#ffffff;
+$color-black:#000000;
 $color-grey: rgb(53,53,53);
-$color-grey2: lighten($color-grey, 60%);
-$color-grey3: lighten($color-grey, 70%);
+$color-greydark: lighten($color-grey, 60%);
+$color-greymedium: lighten($color-grey, 70%);
 
 //Breakpoints
-$breakpoint: (
-  "small"  : 768px,
-  "medium" : 992px,
-  "large"  : 1200px,
-  "x-large" : 1400px
-);
-
+$small-min: 481px;
+$small-max: 768px;
+$medium-min: 769px;
+$medium-max: 1024px;
+$large-min: 1025px;
+$large-max: 1500px;
+$x-large-min: 1501px;
 
 
