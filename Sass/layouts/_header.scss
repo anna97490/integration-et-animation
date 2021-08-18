@@ -1,9 +1,13 @@
 .header {
+    line-height: 3;
     &__logo {
         text-align: center;
+        margin-top: 22px;
     }
-     &__localisation {
+    &__localisation {
         text-align: center;
-        background-color: $color-greydark ;
+        border-top: 2px ;
+        background-color: $color-greydark;
+        box-shadow: inset 0 3px 4px -4px $color-grey;
     }
 }

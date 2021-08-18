@@ -1,0 +1,32 @@
+.heart {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 45px;
+    right: 55px;
+    font-size: 30px;
+    &__icon {
+        &--empty {
+            z-index: 0;
+            color: $color-black;
+            position: absolute;
+        }
+        &:hover {
+            color: $color-white;
+            color: transparent;
+        }
+        &--full {
+            z-index: 1;
+            color: transparent;
+            position: absolute;
+            &::before {
+                content: "\f004";
+                transition: all 1s ease-in-out;
+            }
+            &:hover::before{
+                color: $color-tertiary;
+                cursor: pointer;
+            }
+        }
+    }
+}
