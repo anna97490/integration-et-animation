@@ -18,67 +18,83 @@
 .functioning {
     display: flex;
     flex-wrap: wrap;
-    &__tabs {
-        width: 100%; 
-        padding: 0 5%;  
+    @include small {
+        flex-wrap: wrap;
     }
+}
+.tabs {
+    width: 100%; 
+    padding: 0 5%;  
     &__container {
         counter-reset: li;
         white-space: nowrap;
-        &:hover {
-            background-color: $color-primarylight;
-        } 
     }
     &__list {
+        position: relative;
         counter-increment: li;
         &::before {
             content: counter(li);
-            position: relative;
+            position: absolute;
             left: -12px;
-            top: 46px;
+            top: 21px;
             padding: 4px 8px;
             font-size: 13px;
             color: white;
             background-color: #9356DC;
             border-radius: 50%;
         }
-        &--description { 
-            display: block;
-            margin-bottom: 20px;
-            padding: 6%;
-            font-size: 16px;
-            text-align: center;
-            color: $color-grey;
-            background-color: $color-greymedium;
-            border-radius: 20px;
-            box-shadow: 2px 8px 8px $color-greydark;
+    }
+    &__description { 
+        display: block;
+        margin-bottom: 20px;
+        padding: 6%;
+        font-size: 16px;
+        text-align: center;
+        color: $color-grey;
+        background-color: $color-greymedium;
+        border-radius: 20px;
+        box-shadow: 2px 8px 8px $color-greydark;
+        &:hover {
+            background-color: $color-primarylight;
+            box-shadow: 1px 8px 20px $color-grey;
         }
-        &--description i {
-            width: 20px;
-            position: relative;
-            left: -25px;
-            color: $color-grey;
-        }
+    }
+    &__description i {
+        margin: 0 20px 0 0;
+        color: #353535;
     }
     @include small {
-        display: flex;
-    }
-    @include medium {
-        
-    }
-    @include large{
-        
-    }
-    @include x-large{
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        &__tabs {
-            width: 25%; 
-            padding: 0 3%; 
-        } 
+        flex-wrap: wrap;
         &__list{
             &::before {
-                top: 39px;
+                top: 40px;
+            }
+        }
+    }
+    @include medium {
+        width: 30%;
+        padding: 0 3%;
+        &__list{
+            &::before {
+                top: 14px;
+            }
+        }
+    }
+    @include large {
+        width: 30%;
+        padding: 0 3%;
+        &__list{
+            &::before {
+                top: 21px;
+            }
+        } 
+    }
+    @include x-large {
+        width: 30%;
+        padding: 0 3%;
+        &__list{
+            &::before {
+                top: 21px;
             }
         }  
     } 
@@ -133,10 +149,36 @@
         display: flex;
     }
     @include medium {
-        
+        justify-content: space-between;
+        width: 70%;
+        padding: 0 3%;
+        &__title {
+            color: $color-black;
+        }
+        &__cards {
+           width: 48%;
+           height: 235px;
+        }
+        &__img {
+           height: 65%;
+        }
+        &__description {
+            font-size: 17px;
+        }
     }
     @include large {
-      
+        justify-content: space-between;
+        width: 70%;
+        padding: 0 3%;
+        &__title {
+            color: $color-black;
+        }
+        &__cards {
+           width: 48%;
+        }
+        &__description {
+            font-size: 17px;
+        }
     } 
     @include x-large {
         justify-content: space-between;
@@ -147,9 +189,6 @@
         }
         &__cards {
            width: 48%;
-        }
-        &__img {
-           
         }
         &__description {
             font-size: 17px;

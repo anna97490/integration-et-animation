@@ -9,29 +9,40 @@
   right: 55px;
   font-size: 30px;
 }
-.heart__icon--empty {
+.heart__icon > i {
   z-index: 0;
   color: #000000;
   position: absolute;
 }
-.heart__icon:hover {
+.heart__icon > i:hover {
   color: #ffffff;
   color: transparent;
 }
-.heart__icon--full {
+.heart__icon2 i {
   z-index: 1;
   color: transparent;
   position: absolute;
 }
-.heart__icon--full::before {
+.heart__icon2 i::before {
   content: "";
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease;
+  /*transition-delay: 100ms;*/
 }
-.heart__icon--full:hover::before {
-  color: #99E2D0;
+.heart__icon2 i:hover::before {
+  color: #9356DC;
+  animation: remplissage 1000ms;
+  /* background: linear-gradient(to top left, $color-primary 20%,$color-secondary); */
   cursor: pointer;
 }
 
+@keyframes remplissage {
+  100% {
+    transform: scaleX(1);
+  }
+  0% {
+    transform: scaleX(0);
+  }
+}
 body {
   margin: 0;
 }
@@ -42,6 +53,7 @@ main {
 }
 
 * {
+  font-style: normal;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -107,32 +119,36 @@ body, footer {
   display: flex;
   flex-wrap: wrap;
 }
-.functioning__tabs {
+@media (min-width: 481px) and (max-width: 768px) {
+  .functioning {
+    flex-wrap: wrap;
+  }
+}
+
+.tabs {
   width: 100%;
   padding: 0 5%;
 }
-.functioning__container {
+.tabs__container {
   counter-reset: li;
   white-space: nowrap;
 }
-.functioning__container:hover {
-  background-color: white;
-}
-.functioning__list {
+.tabs__list {
+  position: relative;
   counter-increment: li;
 }
-.functioning__list::before {
+.tabs__list::before {
   content: counter(li);
-  position: relative;
+  position: absolute;
   left: -12px;
-  top: 46px;
+  top: 21px;
   padding: 4px 8px;
   font-size: 13px;
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
 }
-.functioning__list--description {
+.tabs__description {
   display: block;
   margin-bottom: 20px;
   padding: 6%;
@@ -143,28 +159,47 @@ body, footer {
   border-radius: 20px;
   box-shadow: 2px 8px 8px #cecece;
 }
-.functioning__list--description i {
-  width: 20px;
-  position: relative;
-  left: -25px;
+.tabs__description:hover {
+  background-color: #e4d5f6;
+  box-shadow: 1px 8px 20px #353535;
+}
+.tabs__description i {
+  margin: 0 20px 0 0;
   color: #353535;
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .functioning {
-    display: flex;
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tabs__list::before {
+    top: 40px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tabs {
+    width: 30%;
+    padding: 0 3%;
+  }
+  .tabs__list::before {
+    top: 14px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .tabs {
+    width: 30%;
+    padding: 0 3%;
+  }
+  .tabs__list::before {
+    top: 21px;
   }
 }
 @media (min-width: 1501px) {
-  .functioning {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-  .functioning__tabs {
-    width: 25%;
+  .tabs {
+    width: 30%;
     padding: 0 3%;
   }
-  .functioning__list::before {
-    top: 39px;
+  .tabs__list::before {
+    top: 21px;
   }
 }
 
@@ -220,6 +255,42 @@ body, footer {
     display: flex;
   }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .restaurants {
+    justify-content: space-between;
+    width: 70%;
+    padding: 0 3%;
+  }
+  .restaurants__title {
+    color: #000000;
+  }
+  .restaurants__cards {
+    width: 48%;
+    height: 235px;
+  }
+  .restaurants__img {
+    height: 65%;
+  }
+  .restaurants__description {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .restaurants {
+    justify-content: space-between;
+    width: 70%;
+    padding: 0 3%;
+  }
+  .restaurants__title {
+    color: #000000;
+  }
+  .restaurants__cards {
+    width: 48%;
+  }
+  .restaurants__description {
+    font-size: 17px;
+  }
+}
 @media (min-width: 1501px) {
   .restaurants {
     justify-content: space-between;
@@ -238,10 +309,10 @@ body, footer {
 }
 
 .footer {
-  padding: 0 5%;
+  padding: 2% 5%;
   background-color: #353535;
 }
-.footer__tabs h3 {
+.footer__logo a {
   margin: 0;
   padding: 25px 0 5px 0;
   font-family: "Shrikhand", cursive;
@@ -250,13 +321,62 @@ body, footer {
 .footer__list {
   margin-bottom: 10px;
 }
-.footer__list--description {
-  font-weight: normal;
+.footer__list--description a {
+  width: 40px;
+  font-size: 16px;
   color: #ffffff;
 }
 .footer__list--description i {
-  width: 40px;
-  font-size: 20px;
+  margin-right: 10px;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer__logo {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer__list ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 2% 3%;
+  }
+  .footer__logo {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer__list ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1500px) {
+  .footer {
+    padding: 2% 3%;
+  }
+  .footer__logo {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer__list ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1501px) {
+  .footer {
+    padding: 2% 3%;
+  }
+  .footer__logo {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .footer__list ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=.style.css.map */

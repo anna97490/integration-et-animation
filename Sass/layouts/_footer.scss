@@ -1,24 +1,64 @@
 .footer {
-    padding: 0 5%;
+    padding: 2% 5%;
     background-color: $color-grey;
-    &__tabs h3 {
+    &__logo a {
         margin: 0;
         padding: 25px 0 5px 0;
         font-family: $font-title;
         color: $color-white;
     }
-    &__container {
-
-    }
     &__list {
         margin-bottom: 10px;
-        &--description {
-            font-weight: normal;
+        &--description a {
+            width: 40px;
+            font-size: 16px;
             color: $color-white;
         }
         &--description i {
-            width: 40px;
-            font-size: 20px;
+            margin-right: 10px;
         }
     }
+    @include small {
+        &__logo {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @include medium {
+        padding: 2% 3%;
+        &__logo {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @include large{
+        padding: 2% 3%;
+        &__logo {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    } 
+    @include x-large{
+        padding: 2% 3%;
+        &__logo {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    } 
 }
