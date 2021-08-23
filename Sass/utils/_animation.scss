@@ -1,34 +1,46 @@
 .heart {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
-    bottom: 45px;
-    right: 55px;
-    font-size: 30px;
-    &__icon > i {
-        z-index: 0;
-        color: $color-black;
+    &--empty {
         position: absolute;
+        z-index: 0;
+        fill: turquoise;
+    }
+    &--full {
+        position: absolute;
+        z-index: 1;
+        fill: transparent;
         &:hover {
-            color: $color-white;
-            color: transparent;
+            fill: $color-black;
         }
     }
-    &__icon2  i {
-        z-index: 1;
-        color: transparent;
-        position: absolute;
-        &::before {
+}
+
+       /* &::before {
             content: "\f004";
             transition: all 0.6s ease;
-            /*transition-delay: 100ms;*/
+            /*transition-delay: 100ms;
         }
         &:hover::before {
-            color: $color-primary;
+            
             animation: remplissage 1000ms;
             
-            /* background: linear-gradient(to top left, $color-primary 20%,$color-secondary); */
-            cursor: pointer;
+            /* background: linear-gradient(to top left, $color-primary 20%,$color-secondary); 
+        }
+        &  {
+            fill: $color-black;
+            &:hover {
+                fill: transparent;
+            }
+        }
+    }
+    &__icon2 svg {
+        z-index: 0;
+        position: absolute;
+        & path {
+            fill: transparent;
+            &:hover {
+                fill: royalblue;
+            }
         }
     }
 }
@@ -39,6 +51,5 @@
     }
     0% {
         transform: scaleX(0);
-    }
+    }*/
 
-}

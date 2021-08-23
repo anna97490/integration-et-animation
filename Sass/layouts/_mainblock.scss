@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
     background-color: $color-greymedium;
     & h2 {
         margin: 35px 0 30px 0;
@@ -12,7 +12,7 @@
         font-weight: bold;
     }
     & span {
-        height: 60px;
+        height: 30px;
     }
 }
 .functioning {
@@ -24,7 +24,10 @@
 }
 .tabs {
     width: 100%; 
-    padding: 0 5%;  
+    padding: 0 5%;
+    & h2 {
+        margin-bottom: 20px;
+    }  
     &__container {
         counter-reset: li;
         white-space: nowrap;
@@ -53,7 +56,7 @@
         color: $color-grey;
         background-color: $color-greymedium;
         border-radius: 20px;
-        box-shadow: 2px 8px 8px $color-greydark;
+        box-shadow: $shadow1;
         &:hover {
             background-color: $color-primarylight;
             box-shadow: 1px 8px 20px $color-grey;
@@ -105,11 +108,12 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 0 5%;
-    margin-bottom: 60px;
+    margin: 50px 0 60px 0;
     background-color: $color-greymedium;
     &__title {
         width: 100%;
         height: 35px;
+        margin: 40px 0 20px 0;
     }
     &__cards {
         width: 100%;
@@ -123,12 +127,25 @@
         color: $color-black;
         }
         & h3 {
-            margin-bottom: 8px;
+            margin: 15px 0 8px 0;
             font-weight: bold;
         }
+    &__heart {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        bottom: 51px;
+        right: 30px;
+        font-size: 30px;
+    }
     &__img {
-        height: 72%;   
-        }
+        height: 72%;
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px 25px 0 0;
+        }   
+    }
     &__info {
         position: relative;
         &--new {

@@ -15,7 +15,7 @@
     }
 }
 @mixin x-large {
-    @media (min-width: $x-large-min){
+    @media (min-width: $x-large-min) {
         @content;
     }
 }

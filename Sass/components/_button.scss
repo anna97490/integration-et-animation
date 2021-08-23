@@ -1,13 +1,15 @@
 .btn {
+    display: block;
     width: 200px;
     padding: 10px 3px;
+    margin: 30px 0;
     line-height: 2;
     border-radius: 25px;
+    text-align: center;
     color: $color-white;
     background: linear-gradient(to top left, $color-primary 20%,$color-secondary);
     box-shadow: 2px 8px 8px $color-greydark;
     &:hover{
         ;
     }
-
 }

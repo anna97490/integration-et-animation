@@ -1,0 +1,265 @@
+.main {
+    margin: auto;
+}
+.header2 {
+    position: relative;
+    text-align: center;
+    padding: 12px 0;
+    background-color: $color-white;
+    &__icon {
+        position: absolute;
+        left: 3%;
+        top: 31%;
+        font-size: 22px;
+        color: $color-grey;
+    }
+}
+.presentation {
+    height: 355px;
+    &__img {
+        height: 100%;
+        width: 100%;
+    }
+    @include x-large {
+        height: 400px;
+    }
+}
+.menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: $color-greymedium;
+    padding-bottom: 20px;
+    &__title {
+        width: 100%;
+        padding: 6% 0 0 6%;
+        margin-top: -86px;
+        font-family: $font-title;
+        font-size: 27px;
+        background-color: $color-greymedium;
+        border-radius: 45px 45px 0 0;   
+    }
+    &__heart {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        bottom: 51px;
+        right: 60px;
+        font-size: 30px;
+    }
+    &__dishes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 3%;
+        background-color: $color-greymedium;
+    }
+    &__details {
+        width: 100%;
+    }
+    &__title2 {
+        position: relative;
+        width: 100%;
+        margin: 6% 0 5% 3%;
+        font-size: 16px; 
+        font-weight: bold;
+        &::before {
+            position: absolute;
+            content: "_____";
+            bottom: -8px;
+            width: 45px;
+            color: $color-tertiary;
+        }
+    }
+    &__checking {
+        display: none;
+        position: absolute;
+        width: 10%;
+        right: 45px;
+        height: 42px;
+        background-color: $color-secondary;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        & i {
+            cursor: pointer;
+            margin: auto;
+            font-size: 1.6rem;
+            color: white;
+            transform: rotate(0);
+            transition: transform 0.5s;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: $color-white;
+        border-radius: 20px;
+        box-shadow: $shadow1;
+        &--subhead {
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        &--description {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 14px;
+            & p {
+                margin: 0;
+            }  
+            & span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;
+            } 
+        }
+    }
+    @include small {
+        &__title {
+            padding: 4% 0 0 5%;
+        }
+        &__details {
+            width: 100%;
+        } 
+        &__title2 {
+            margin: 5% 0 5% 2%; 
+        }
+    }
+    @include medium {
+        width: unset;
+        margin: 0 6%;
+        &__title {
+            padding: 3% 0 0 3%;
+        }
+        &__dishes {
+            padding: 0 2%;
+            flex-wrap: unset;
+            flex-wrap: wrap;
+        } 
+        &__details {
+            width: 100%;
+        } 
+        &__title2 {
+            margin-left: 2%;
+        }
+    }
+    @include large {
+        width: unset;
+        margin: 0 6%;
+        &__title {
+            padding: 3% 0 0 3%;
+        }
+        &__dishes {
+            padding: 0 2%;
+            flex-wrap: unset;
+            justify-content: space-between;
+        } 
+        &__details {
+            width: 31%;
+        } 
+        &__title2 {
+            margin-left: 3%;
+        }
+    }
+    @include x-large {
+        width: unset;
+        margin: 0 6%;
+        &__title {
+            padding: 3% 0 0 3%;
+        }
+        &__dishes {
+            padding: 0 2%;
+            flex-wrap: unset;
+            justify-content: space-between;
+        } 
+        &__details {
+            width: 31%;
+        } 
+        &__title2 {
+            margin-left: 3%;
+        }
+    } 
+}
+ /*.menus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $color-white;
+    @include small {
+            
+    }
+    @include medium {
+    
+    }
+    @include large {
+     
+    }
+    @include x-large {
+        padding: 0px 100px;
+    } 
+    &__title {
+        width: 100%;
+        padding: 39px 0 0 31px;
+        margin-top: -90px;
+        font-family: $font-title;
+        font-size: 27px;
+        background-color: $color-greymedium;
+        border-radius: 45px 45px 0 0;   
+    }
+   /* &__dishes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 3%;
+        background-color: $color-greymedium;
+    }
+    &__subhead {
+        width: 100%;
+        margin: 35px 0 0 10px;
+        font-size: 18px;
+        font-weight: normal;
+        /*&::before {
+            content: "";
+
+            left: 0px;
+            bottom: -6px;
+            width: 45px;
+            height: 3px;
+            background: #99e2d0;
+        }
+    }*/
+   
+ /*   
+    &__cards p {
+        margin: 0;
+    }  
+    &__cards span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: bold;
+    } 
+    &__checking {
+        display: none;
+        position: absolute;
+        width: 10%;
+        right: 45px;
+        height: 42px;
+        background-color: $color-secondary;
+        transform: translateX(100%);
+        transition: transform 0.2s;
+        & i {
+            cursor: pointer;
+            margin: auto;
+            font-size: 1.6rem;
+            color: white;
+            transform: rotate(0);
+            transition: transform 0.5s;
+        }
+    }
+}*/

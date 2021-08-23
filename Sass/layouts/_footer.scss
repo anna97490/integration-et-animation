@@ -1,24 +1,32 @@
 .footer {
     padding: 2% 5%;
     background-color: $color-grey;
-    &__logo a {
+    &__logo {
         margin: 0;
-        padding: 25px 0 5px 0;
+        padding-top: 20px;
         font-family: $font-title;
+    }
+    &__logo a {
         color: $color-white;
     }
     &__list {
         margin-bottom: 10px;
-        &--description a {
-            width: 40px;
+        &--description {
+            padding: 5px 0;
             font-size: 16px;
+        }
+        &--description a {
             color: $color-white;
         }
         &--description i {
             margin-right: 10px;
+              &:nth-child(1) {
+                width: 18px;
+            }
         }
     }
     @include small {
+        padding: 2% 3%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;
@@ -29,7 +37,7 @@
         }
     }
     @include medium {
-        padding: 2% 3%;
+        padding: 2% 6%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;
@@ -40,7 +48,7 @@
         }
     }
     @include large{
-        padding: 2% 3%;
+        padding: 2% 6%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;
@@ -51,7 +59,7 @@
         }
     } 
     @include x-large{
-        padding: 2% 3%;
+        padding: 2% 6%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;
