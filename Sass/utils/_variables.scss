@@ -1,14 +1,14 @@
 // Colors
 $color-primary: #9356DC;
-$color-primarylight: lighten($color-primary, 30%);
+$color-primarylight: lighten($color-primary, 35%);
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 $color-tertiarydark: darken($color-tertiary, 40%);
 $color-white:#ffffff;
 $color-black:#000000;
-$color-grey: rgb(53,53,53);
-$color-greydark: lighten($color-grey, 60%);
-$color-greymedium: lighten($color-grey, 70%);
+$color-grey: #303030;
+$color-greydark: lighten($color-grey, 65%);
+$color-greymedium: lighten($color-grey, 75%);
 
 //Breakpoints
 $small-min: 481px;
@@ -20,7 +20,8 @@ $large-max: 1500px;
 $x-large-min: 1501px;
 
 //Ombres 
-$shadow1: 2px 8px 8px $color-greydark;
+$shadow1: 1px 5px 11px $color-greydark;
+$shadow2: 10px 5px 11px $color-greydark;
 
 //Photos
 $alafrancaise: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.png);

@@ -44,8 +44,8 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
-        bottom: 51px;
-        right: 60px;
+        bottom: 50px;
+        right: 70px;
         font-size: 30px;
     }
     &__dishes {
@@ -98,8 +98,13 @@
         padding: 15px;
         margin-bottom: 15px;
         background-color: $color-white;
+        color: $color-black;
         border-radius: 20px;
         box-shadow: $shadow1;
+        &:hover {
+            transform:scale(1.02);
+            box-shadow: $shadow2;
+        }
         &--subhead {
             margin-bottom: 5px;
             font-size: 18px;
@@ -186,80 +191,14 @@
         }
     } 
 }
- /*.menus {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: $color-white;
-    @include small {
-            
+ 
+@keyframes cards {
+    0% {
+        transform: translateY(30%);
+        opacity: 0%;
     }
-    @include medium {
-    
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
     }
-    @include large {
-     
-    }
-    @include x-large {
-        padding: 0px 100px;
-    } 
-    &__title {
-        width: 100%;
-        padding: 39px 0 0 31px;
-        margin-top: -90px;
-        font-family: $font-title;
-        font-size: 27px;
-        background-color: $color-greymedium;
-        border-radius: 45px 45px 0 0;   
-    }
-   /* &__dishes {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 0 3%;
-        background-color: $color-greymedium;
-    }
-    &__subhead {
-        width: 100%;
-        margin: 35px 0 0 10px;
-        font-size: 18px;
-        font-weight: normal;
-        /*&::before {
-            content: "";
-
-            left: 0px;
-            bottom: -6px;
-            width: 45px;
-            height: 3px;
-            background: #99e2d0;
-        }
-    }*/
-   
- /*   
-    &__cards p {
-        margin: 0;
-    }  
-    &__cards span {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-weight: bold;
-    } 
-    &__checking {
-        display: none;
-        position: absolute;
-        width: 10%;
-        right: 45px;
-        height: 42px;
-        background-color: $color-secondary;
-        transform: translateX(100%);
-        transition: transform 0.2s;
-        & i {
-            cursor: pointer;
-            margin: auto;
-            font-size: 1.6rem;
-            color: white;
-            transform: rotate(0);
-            transition: transform 0.5s;
-        }
-    }
-}*/
+}

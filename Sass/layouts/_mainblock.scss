@@ -3,16 +3,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     padding-bottom: 45px;
     background-color: $color-greymedium;
     & h2 {
-        margin: 35px 0 30px 0;
+        margin: 20px 0;
         font-size: 20px;
         font-weight: bold;
     }
     & span {
         height: 30px;
+        margin-bottom: 5px;
     }
 }
 .functioning {
@@ -31,40 +32,47 @@
     &__container {
         counter-reset: li;
         white-space: nowrap;
+        margin-bottom: 80px;
     }
     &__list {
         position: relative;
         counter-increment: li;
-        &::before {
-            content: counter(li);
-            position: absolute;
-            left: -12px;
-            top: 21px;
-            padding: 4px 8px;
-            font-size: 13px;
-            color: white;
-            background-color: #9356DC;
-            border-radius: 50%;
-        }
     }
     &__description { 
         display: block;
+        position: relative;
         margin-bottom: 20px;
-        padding: 6%;
+        padding: 8%;
         font-size: 16px;
         text-align: center;
         color: $color-grey;
         background-color: $color-greymedium;
         border-radius: 20px;
         box-shadow: $shadow1;
-        &:hover {
+        &::before {
+            content: counter(li);
+            position: absolute;
+            left: -12px;
+            top: 30px;
+            padding: 4px 8px;
+            font-size: 13px;
+            color: white;
+            background-color: #9356DC;
+            border-radius: 50%;
+        }
+        &:hover i {
+            transform:scale(1.02);
             background-color: $color-primarylight;
-            box-shadow: 1px 8px 20px $color-grey;
+            box-shadow: $shadow2;
+            color: $color-primary;
         }
     }
     &__description i {
         margin: 0 20px 0 0;
         color: #353535;
+        &:nth-child(1) {
+            font-size: 20px;
+        }
     }
     @include small {
         flex-wrap: wrap;
@@ -95,6 +103,7 @@
     @include x-large {
         width: 30%;
         padding: 0 3%;
+        margin-top: 41px;
         &__list{
             &::before {
                 top: 21px;
@@ -108,7 +117,6 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 0 5%;
-    margin: 50px 0 60px 0;
     background-color: $color-greymedium;
     &__title {
         width: 100%;
@@ -121,6 +129,11 @@
         margin-bottom: 40px;
         border-radius: 25px;
         background-color: $color-white;
+        box-shadow: $shadow1;
+        &:hover{
+            transform:scale(1.02);
+            box-shadow: $shadow2;
+        }
     }
     &__description {
         margin-left: 15px;
@@ -135,7 +148,7 @@
         display: flex;
         justify-content: flex-end;
         bottom: 51px;
-        right: 30px;
+        right: 50px;
         font-size: 30px;
     }
     &__img {
