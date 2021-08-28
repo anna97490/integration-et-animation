@@ -1,5 +1,6 @@
+/*FOOTER*/
 .footer {
-    padding: 2% 5%;
+    padding: 2% 3%;
     background-color: $color-grey;
     &__logo {
         margin: 0;
@@ -8,36 +9,26 @@
     }
     &__logo a {
         color: $color-white;
+        font-size: 18px;
     }
     &__list {
         margin-bottom: 10px;
         &--description {
             padding: 5px 0;
-            font-size: 16px;
+            font-size: 15px;
         }
         &--description a {
             color: $color-white;
         }
         &--description i {
             margin-right: 10px;
+            font-size: 14px;
               &:nth-child(1) {
                 width: 18px;
             }
         }
     }
-    @include small {
-        padding: 2% 3%;
-        &__logo {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-        &__list ul {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
     @include medium {
-        padding: 2% 6%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;
@@ -48,7 +39,6 @@
         }
     }
     @include large{
-        padding: 2% 6%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;
@@ -59,7 +49,6 @@
         }
     } 
     @include x-large{
-        padding: 2% 3%;
         &__logo {
             font-size: 20px;
             margin-bottom: 30px;

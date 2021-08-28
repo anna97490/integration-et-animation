@@ -1,3 +1,4 @@
+/*HOMEPAGE*/
 .explore {
     display: flex;
     flex-direction: column;
@@ -8,92 +9,119 @@
     background-color: $color-greymedium;
     & h2 {
         margin: 20px 0;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
     }
     & span {
         height: 30px;
-        margin-bottom: 5px;
+        margin: 0 5px;
+        font-size: 15px;
+    }
+    @include large {
+        margin-bottom: 0;
+        box-shadow: inset 0 3px 4px -4px #303030;
+    }
+    @include x-large {
+        margin-bottom: 0;
+        box-shadow: inset 0 3px 4px -4px #303030;
     }
 }
 .functioning {
     display: flex;
     flex-wrap: wrap;
-    @include small {
-        flex-wrap: wrap;
-    }
 }
 .tabs {
     width: 100%; 
     padding: 0 5%;
+    display: block;
     & h2 {
         margin-bottom: 20px;
+        font-size: 18px;
     }  
-    &__container {
+    & ol {
         counter-reset: li;
-        white-space: nowrap;
+        padding: 0;
+    }
+    &__container {
         margin-bottom: 80px;
     }
     &__list {
-        position: relative;
         counter-increment: li;
+    }
+    & li {
+        background-color: $color-greymedium;
+        border-radius: 20px;
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: $shadow2;
+            background-color: $color-primarylight;
+        }
+        &:hover i {
+            color: $color-primary;
+        }
     }
     &__description { 
         display: block;
         position: relative;
+        height: 64px;
         margin-bottom: 20px;
-        padding: 8%;
-        font-size: 16px;
+        padding: 24px;
         text-align: center;
+        font-size: 14px;
+        font-weight: bold;
         color: $color-grey;
-        background-color: $color-greymedium;
         border-radius: 20px;
         box-shadow: $shadow1;
         &::before {
             content: counter(li);
             position: absolute;
             left: -12px;
-            top: 30px;
+            top: 22px;
             padding: 4px 8px;
             font-size: 13px;
+            font-weight: normal;
             color: white;
             background-color: #9356DC;
             border-radius: 50%;
         }
-        &:hover i {
-            transform:scale(1.02);
-            background-color: $color-primarylight;
-            box-shadow: $shadow2;
-            color: $color-primary;
+        &--icone {
+            font-size: 17px;
+            text-align: center;
         }
     }
     &__description i {
-        margin: 0 20px 0 0;
         color: #353535;
-        &:nth-child(1) {
-            font-size: 20px;
-        }
+        margin-right: 10px;
     }
     @include small {
-        flex-wrap: wrap;
-        &__list{
+        &__list {
             &::before {
                 top: 40px;
             }
         }
     }
     @include medium {
-        width: 30%;
         padding: 0 3%;
-        &__list{
-            &::before {
-                top: 14px;
-            }
+        & ol {
+            display: flex;
+            justify-content: center;
+        }
+        & ol a {
+            width: 100%;
+        }
+        &__list {
+            width: 85%;
+            padding: 0 1%;
         }
     }
+       
     @include large {
         width: 30%;
-        padding: 0 3%;
+        padding: 3% 3% 0 3%;
+        box-shadow: inset 0 3px 4px -4px #303030;
+        &__container {
+            padding: 0px 3em;
+        }
         &__list{
             &::before {
                 top: 21px;
@@ -102,8 +130,11 @@
     }
     @include x-large {
         width: 30%;
-        padding: 0 3%;
-        margin-top: 41px;
+        padding: 3% 3% 0 3%;
+        box-shadow: inset 0 3px 4px -4px #303030;
+        &__container {
+            padding: 0px 3em;
+        }
         &__list{
             &::before {
                 top: 21px;
@@ -116,16 +147,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 5%;
+    padding: 0 3%;
     background-color: $color-greymedium;
     &__title {
         width: 100%;
         height: 35px;
-        margin: 40px 0 20px 0;
+        margin: 45px 0 20px 0;
+        font-size: 18px;
     }
     &__cards {
         width: 100%;
-        height: 300px;
+        height: 270px;
         margin-bottom: 40px;
         border-radius: 25px;
         background-color: $color-white;
@@ -141,13 +173,16 @@
         }
         & h3 {
             margin: 15px 0 8px 0;
-            font-weight: bold;
+            font-size: 15px;
+        }
+        & span {
+            font-size: 14px;
         }
     &__heart {
         position: relative;
         display: flex;
         justify-content: flex-end;
-        bottom: 51px;
+        bottom: 43px;
         right: 50px;
         font-size: 30px;
     }
@@ -163,8 +198,8 @@
         position: relative;
         &--new {
         position: absolute;
-        width: 100px;
-        height: 35px;
+        width: 80px;
+        height: 30px;
         right: 15px;
         top: 15px;
         text-align: center;
@@ -180,10 +215,7 @@
     }
     @include medium {
         justify-content: space-between;
-        width: 70%;
-        padding: 0 3%;
         &__title {
-            color: $color-black;
         }
         &__cards {
            width: 48%;
@@ -199,12 +231,13 @@
     @include large {
         justify-content: space-between;
         width: 70%;
-        padding: 0 3%;
+        padding: 0px 3%;
+        box-shadow: inset 0 3px 4px -4px #303030;
         &__title {
-            color: $color-black;
+            margin: 45px 0 8px 0px;
         }
         &__cards {
-           width: 48%;
+            width: 30%;
         }
         &__description {
             font-size: 17px;
@@ -213,12 +246,13 @@
     @include x-large {
         justify-content: space-between;
         width: 70%;
-        padding: 0 3%;
+        padding: 0px 3%;
+        box-shadow: inset 0 3px 4px -4px #303030;
         &__title {
-            color: $color-black;
+            margin: 45px 0 8px 0px;
         }
         &__cards {
-           width: 48%;
+            width: 30%;
         }
         &__description {
             font-size: 17px;

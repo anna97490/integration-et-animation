@@ -14,15 +14,16 @@ $color-greymedium: lighten($color-grey, 75%);
 $small-min: 481px;
 $small-max: 768px;
 $medium-min: 769px;
-$medium-max: 1024px;
-$large-min: 1025px;
+$medium-max: 1023px;
+$large-min: 1024px;
 $large-max: 1500px;
 $x-large-min: 1501px;
 
-//Ombres 
+//Shadows 
 $shadow1: 1px 5px 11px $color-greydark;
 $shadow2: 10px 5px 11px $color-greydark;
 
-//Photos
+//Pictures
 $alafrancaise: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.png);
+
 

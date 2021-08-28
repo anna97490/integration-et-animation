@@ -4,6 +4,7 @@
   position: absolute;
 }
 .heart--empty {
+  width: 27px;
   z-index: 1;
   fill: white;
   stroke: black;
@@ -13,6 +14,7 @@
   transform: scale(1);
 }
 .heart--full {
+  width: 27px;
   z-index: 2;
   fill: url(#gradient);
   stroke: url(#gradient);
@@ -21,8 +23,13 @@
   transition: all 0.7s;
 }
 
+/* GENERAL SETTINGS */
 body {
   margin: 0;
+}
+
+.logo {
+  width: 160px;
 }
 
 main {
@@ -32,7 +39,6 @@ main {
 
 * {
   font-style: normal;
-  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -49,27 +55,31 @@ h1, h2, h3 {
   margin: 0;
 }
 
+/*TYPOGRAPHIES*/
 body, footer {
   font-family: "Roboto", sans-serif;
 }
 
 .btn {
   display: block;
-  width: 200px;
-  padding: 10px 3px;
+  width: 190px;
+  padding: 8px 3px;
   margin: 18px 0;
   line-height: 2;
   border-radius: 25px;
   text-align: center;
+  font-size: 14px;
   color: #ffffff;
   background: linear-gradient(to top left, #9356DC 20%, #FF79DA);
   box-shadow: 2px 8px 8px #d6d6d6;
+  transition: transform 0.5s;
 }
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
 
+/*HEADER HOMEPAGE*/
 .header {
   line-height: 3;
 }
@@ -79,6 +89,7 @@ body, footer {
 }
 .header__localisation {
   text-align: center;
+  font-size: 14px;
   background-color: #d6d6d6;
   box-shadow: inset 0 3px 4px -4px #303030;
 }
@@ -86,6 +97,7 @@ body, footer {
   margin-right: 8px;
 }
 
+/*HOMEPAGE*/
 .explore {
   display: flex;
   flex-direction: column;
@@ -97,49 +109,73 @@ body, footer {
 }
 .explore h2 {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .explore span {
   height: 30px;
-  margin-bottom: 5px;
+  margin: 0 5px;
+  font-size: 15px;
+}
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .explore {
+    margin-bottom: 0;
+    box-shadow: inset 0 3px 4px -4px #303030;
+  }
+}
+@media (min-width: 1501px) {
+  .explore {
+    margin-bottom: 0;
+    box-shadow: inset 0 3px 4px -4px #303030;
+  }
 }
 
 .functioning {
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .functioning {
-    flex-wrap: wrap;
-  }
-}
 
 .tabs {
   width: 100%;
   padding: 0 5%;
+  display: block;
 }
 .tabs h2 {
   margin-bottom: 20px;
+  font-size: 18px;
+}
+.tabs ol {
+  counter-reset: li;
+  padding: 0;
 }
 .tabs__container {
-  counter-reset: li;
-  white-space: nowrap;
   margin-bottom: 80px;
 }
 .tabs__list {
-  position: relative;
   counter-increment: li;
+}
+.tabs li {
+  background-color: #efefef;
+  border-radius: 20px;
+}
+.tabs li:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 5px 11px #d6d6d6;
+  background-color: #f2eafb;
+}
+.tabs li:hover i {
+  color: #9356DC;
 }
 .tabs__description {
   display: block;
   position: relative;
+  height: 64px;
   margin-bottom: 20px;
-  padding: 8%;
-  font-size: 16px;
+  padding: 24px;
   text-align: center;
+  font-size: 14px;
+  font-weight: bold;
   color: #303030;
-  background-color: #efefef;
   border-radius: 20px;
   box-shadow: 1px 5px 11px #d6d6d6;
 }
@@ -147,47 +183,51 @@ body, footer {
   content: counter(li);
   position: absolute;
   left: -12px;
-  top: 30px;
+  top: 22px;
   padding: 4px 8px;
   font-size: 13px;
+  font-weight: normal;
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
 }
-.tabs__description:hover i {
-  transform: scale(1.02);
-  background-color: #f2eafb;
-  box-shadow: 10px 5px 11px #d6d6d6;
-  color: #9356DC;
+.tabs__description--icone {
+  font-size: 17px;
+  text-align: center;
 }
 .tabs__description i {
-  margin: 0 20px 0 0;
   color: #353535;
-}
-.tabs__description i:nth-child(1) {
-  font-size: 20px;
+  margin-right: 10px;
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .tabs {
-    flex-wrap: wrap;
-  }
   .tabs__list::before {
     top: 40px;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .tabs {
-    width: 30%;
     padding: 0 3%;
   }
-  .tabs__list::before {
-    top: 14px;
+  .tabs ol {
+    display: flex;
+    justify-content: center;
+  }
+  .tabs ol a {
+    width: 100%;
+  }
+  .tabs__list {
+    width: 85%;
+    padding: 0 1%;
   }
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 1500px) {
   .tabs {
     width: 30%;
-    padding: 0 3%;
+    padding: 3% 3% 0 3%;
+    box-shadow: inset 0 3px 4px -4px #303030;
+  }
+  .tabs__container {
+    padding: 0px 3em;
   }
   .tabs__list::before {
     top: 21px;
@@ -196,8 +236,11 @@ body, footer {
 @media (min-width: 1501px) {
   .tabs {
     width: 30%;
-    padding: 0 3%;
-    margin-top: 41px;
+    padding: 3% 3% 0 3%;
+    box-shadow: inset 0 3px 4px -4px #303030;
+  }
+  .tabs__container {
+    padding: 0px 3em;
   }
   .tabs__list::before {
     top: 21px;
@@ -209,17 +252,18 @@ body, footer {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 5%;
+  padding: 0 3%;
   background-color: #efefef;
 }
 .restaurants__title {
   width: 100%;
   height: 35px;
-  margin: 40px 0 20px 0;
+  margin: 45px 0 20px 0;
+  font-size: 18px;
 }
 .restaurants__cards {
   width: 100%;
-  height: 300px;
+  height: 270px;
   margin-bottom: 40px;
   border-radius: 25px;
   background-color: #ffffff;
@@ -235,13 +279,16 @@ body, footer {
 }
 .restaurants h3 {
   margin: 15px 0 8px 0;
-  font-weight: bold;
+  font-size: 15px;
+}
+.restaurants span {
+  font-size: 14px;
 }
 .restaurants__heart {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  bottom: 51px;
+  bottom: 43px;
   right: 50px;
   font-size: 30px;
 }
@@ -258,8 +305,8 @@ body, footer {
 }
 .restaurants__info--new {
   position: absolute;
-  width: 100px;
-  height: 35px;
+  width: 80px;
+  height: 30px;
   right: 15px;
   top: 15px;
   text-align: center;
@@ -274,14 +321,9 @@ body, footer {
     display: flex;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .restaurants {
     justify-content: space-between;
-    width: 70%;
-    padding: 0 3%;
-  }
-  .restaurants__title {
-    color: #000000;
   }
   .restaurants__cards {
     width: 48%;
@@ -294,17 +336,18 @@ body, footer {
     font-size: 17px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 1500px) {
   .restaurants {
     justify-content: space-between;
     width: 70%;
-    padding: 0 3%;
+    padding: 0px 3%;
+    box-shadow: inset 0 3px 4px -4px #303030;
   }
   .restaurants__title {
-    color: #000000;
+    margin: 45px 0 8px 0px;
   }
   .restaurants__cards {
-    width: 48%;
+    width: 30%;
   }
   .restaurants__description {
     font-size: 17px;
@@ -314,21 +357,23 @@ body, footer {
   .restaurants {
     justify-content: space-between;
     width: 70%;
-    padding: 0 3%;
+    padding: 0px 3%;
+    box-shadow: inset 0 3px 4px -4px #303030;
   }
   .restaurants__title {
-    color: #000000;
+    margin: 45px 0 8px 0px;
   }
   .restaurants__cards {
-    width: 48%;
+    width: 30%;
   }
   .restaurants__description {
     font-size: 17px;
   }
 }
 
+/*FOOTER*/
 .footer {
-  padding: 2% 5%;
+  padding: 2% 3%;
   background-color: #303030;
 }
 .footer__logo {
@@ -338,27 +383,26 @@ body, footer {
 }
 .footer__logo a {
   color: #ffffff;
+  font-size: 18px;
 }
 .footer__list {
   margin-bottom: 10px;
 }
 .footer__list--description {
   padding: 5px 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 .footer__list--description a {
   color: #ffffff;
 }
 .footer__list--description i {
   margin-right: 10px;
+  font-size: 14px;
 }
 .footer__list--description i:nth-child(1) {
   width: 18px;
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .footer {
-    padding: 2% 3%;
-  }
+@media (min-width: 769px) and (max-width: 1023px) {
   .footer__logo {
     font-size: 20px;
     margin-bottom: 30px;
@@ -368,23 +412,7 @@ body, footer {
     justify-content: space-between;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .footer {
-    padding: 2% 6%;
-  }
-  .footer__logo {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-  .footer__list ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1500px) {
-  .footer {
-    padding: 2% 6%;
-  }
+@media (min-width: 1024px) and (max-width: 1500px) {
   .footer__logo {
     font-size: 20px;
     margin-bottom: 30px;
@@ -395,9 +423,6 @@ body, footer {
   }
 }
 @media (min-width: 1501px) {
-  .footer {
-    padding: 2% 3%;
-  }
   .footer__logo {
     font-size: 20px;
     margin-bottom: 30px;
@@ -421,7 +446,7 @@ body, footer {
 .header2__icon {
   position: absolute;
   left: 3%;
-  top: 31%;
+  top: 26%;
   font-size: 22px;
   color: #303030;
 }
@@ -478,53 +503,67 @@ body, footer {
   position: relative;
   width: 100%;
   margin: 6% 0 5% 3%;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: normal;
 }
 .menus__title2::before {
   position: absolute;
-  content: "_____";
+  content: "";
   bottom: -8px;
   width: 45px;
-  color: #99E2D0;
-}
-.menus__checking {
-  display: none;
-  position: absolute;
-  width: 10%;
-  right: 45px;
-  height: 42px;
-  background-color: #FF79DA;
-  transform: translateX(100%);
-  transition: transform 0.2s;
-}
-.menus__checking i {
-  cursor: pointer;
-  margin: auto;
-  font-size: 1.6rem;
-  color: white;
-  transform: rotate(0);
-  transition: transform 0.5s;
+  height: 3px;
+  background-color: #99E2D0;
 }
 .menus__cards {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
   background-color: #ffffff;
-  color: #000000;
   border-radius: 20px;
   box-shadow: 1px 5px 11px #d6d6d6;
+}
+.menus__cards:nth-of-type(1) {
+  animation: menus 0.8s 0.5s both;
+}
+.menus__cards:nth-of-type(2) {
+  animation: menus 1.1s 0.5s both;
+}
+.menus__cards:nth-of-type(3) {
+  animation: menus 1.4s 0.5s both;
+}
+.menus__cards:nth-of-type(4) {
+  animation: menus 1.7s 0.5s both;
 }
 .menus__cards:hover {
   transform: scale(1.02);
   box-shadow: 10px 5px 11px #d6d6d6;
 }
+.menus__cards:hover p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menus__cards:hover span {
+  margin-right: 3em;
+}
+.menus__cards:hover .menus__checking {
+  transform: translateX(0%);
+}
+.menus__cards:hover i {
+  transform: rotate(360deg);
+}
+.menus__cards a {
+  display: flex;
+  flex-wrap: wrap;
+  color: #000000;
+  width: 100%;
+}
 .menus__cards--subhead {
+  width: 100%;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .menus__cards--description {
@@ -537,9 +576,26 @@ body, footer {
   margin: 0;
 }
 .menus__cards--description span {
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-weight: bold;
+  transition: 0.5s ease;
+}
+.menus__checking {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18%;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0px 20px 20px 0;
+  transform: translateX(100%);
+  transition: transform 0.2s;
+}
+.menus__checking i {
+  margin: auto;
+  font-size: 25px;
+  color: white;
+  transition: transform 0.5s;
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .menus__title {
@@ -552,10 +608,10 @@ body, footer {
     margin: 5% 0 5% 2%;
   }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .menus {
     width: unset;
-    margin: 0 6%;
+    margin: 0 3%;
   }
   .menus__title {
     padding: 3% 0 0 3%;
@@ -572,10 +628,13 @@ body, footer {
     margin-left: 2%;
   }
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 1500px) {
   .menus {
     width: unset;
-    margin: 0 6%;
+    margin: 0 3%;
+  }
+  .menus__cards:hover span {
+    margin-right: 5em;
   }
   .menus__title {
     padding: 3% 0 0 3%;
@@ -595,7 +654,10 @@ body, footer {
 @media (min-width: 1501px) {
   .menus {
     width: unset;
-    margin: 0 6%;
+    margin: 0 3%;
+  }
+  .menus__cards:hover span {
+    margin-right: 5em;
   }
   .menus__title {
     padding: 3% 0 0 3%;
@@ -613,7 +675,7 @@ body, footer {
   }
 }
 
-@keyframes cards {
+@keyframes menus {
   0% {
     transform: translateY(30%);
     opacity: 0%;

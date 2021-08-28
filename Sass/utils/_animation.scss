@@ -1,6 +1,7 @@
 .heart{ 
     position: absolute;
     &--empty{
+        width: 27px;
         z-index:1;
         fill: white;
         stroke: black;
@@ -12,6 +13,7 @@
         }
     }
     &--full{
+        width: 27px;
         z-index:2;
         fill: url(#gradient);
         stroke: url(#gradient);

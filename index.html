@@ -20,7 +20,7 @@
     <!--HEADER-->
     <header class="header">
       <div class="header__logo">
-        <a href="#"><img src="images/logo/ohmyfood@2x.svg"></a>
+        <a href="#"><img class="logo" src="images/logo/ohmyfood@2x.svg"></a>
       </div>
       <div class="header__localisation">
         <i class="fas fa-map-marker-alt"></i>
@@ -40,19 +40,30 @@
       <section class="functioning">
         <div class="tabs">
           <h2>Fonctionnement</h2>
-          <a href="#">
-            <ol class="tabs__container">
-              <li class="tabs__list">
-                <span class="tabs__description"><i class="fas fa-solid fa-mobile-alt"></i>Choisissez un restaurant</span>
-              </li>
-              <li class="tabs__list">
-                <span class="tabs__description"><i class="fas fa-solid fa-list-ul"></i>Composez votre menu</span>
-              </li>
-              <li class="tabs__list">
-                <span class="tabs__description"><i class="fas fa-solid fa-store"></i>Dégustez au restaurant</span>
-              </li>
+            <ol>
+              <a href="#">
+                <div class="tabs__list">
+                  <li>
+                    <span class="tabs__description">
+                      <i class="fas fa-solid fa-mobile-alt tabs__description--icone"></i>Choisissez un restaurant</span>
+                  </li>
+                </div>
+              </a>
+              <a href="#">
+                <div class="tabs__list">
+                  <li>
+                    <span class="tabs__description"><i class="fas fa-solid fa-list-ul"></i>Composez votre menu</span>
+                  </li>
+                </div>
+              </a>
+              <a href="#">
+                <div class="tabs__list">
+                  <li>
+                    <span class="tabs__description"><i class="fas fa-solid fa-store"></i>Dégustez au restaurant</span>
+                  </li>
+                </div>
+              </a>
             </ol>
-          </a>
         </div>
 
         <!--RESTAURANTS-->
@@ -73,14 +84,14 @@
               </div>
               <div class="restaurants__heart">
                 <div class="heart">
-                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                   </svg> 
-                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                       <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                     </svg>
                 </div>   
@@ -103,14 +114,14 @@
               </div>
               <div class="restaurants__heart">
                 <div class="heart">
-                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                   </svg> 
-                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                       <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                     </svg>
                 </div> 
@@ -132,14 +143,14 @@
               </div>
               <div class="restaurants__heart">
                 <div class="heart">
-                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                   </svg> 
-                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                       <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                     </svg>
                 </div> 
@@ -159,14 +170,14 @@
               </div>
               <div class="restaurants__heart">
                 <div class="heart">
-                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                   </svg> 
-                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                       <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                     </svg>
                 </div> 
