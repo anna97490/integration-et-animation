@@ -13,6 +13,9 @@
     }
     &__list {
         margin-bottom: 10px;
+        & ul {
+            padding: 0;
+        }
         &--description {
             padding: 5px 0;
             font-size: 15px;
@@ -29,33 +32,60 @@
         }
     }
     @include medium {
+        display: flex;
         &__logo {
-            font-size: 20px;
-            margin-bottom: 30px;
+            & a {
+                @include logo-medium;
+            }
         }
-        &__list ul {
+        &__container {
+            width: 100%;
+            line-height: 2.5;
+        }
+        &__list {
+            width: 100%;
+        & ul {
             display: flex;
             justify-content: space-between;
+            }
         }
     }
-    @include large{
+    @include large {
+        display: flex;
         &__logo {
-            font-size: 20px;
-            margin-bottom: 30px;
+            & a {
+                @include logo-l-xl;
+            }
         }
-        &__list ul {
+        &__container {
+            width: 100%;
+            line-height: 2.5;
+        }
+        &__list {
+            width: 100%;
+        & ul {
             display: flex;
             justify-content: space-between;
+            }
         }
     } 
-    @include x-large{
+    @include x-large {
+        display: flex;
         &__logo {
-            font-size: 20px;
-            margin-bottom: 30px;
+            & a {
+               @include logo-l-xl;
+            }
         }
-        &__list ul {
+        &__container {
+            width: 100%;
+            line-height: 2.5;
+        }
+        &__list {
+            width: 100%;
+        & ul {
             display: flex;
             justify-content: space-between;
+            }
         }
     } 
 }
