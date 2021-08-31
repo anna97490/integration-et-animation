@@ -1,6 +1,6 @@
 /*FOOTER*/
 .footer {
-    padding: 2% 3%;
+    padding: 2% 4%;
     background-color: $color-grey;
     &__logo {
         margin: 0;
@@ -31,61 +31,4 @@
             }
         }
     }
-    @include medium {
-        display: flex;
-        &__logo {
-            & a {
-                @include logo-medium;
-            }
-        }
-        &__container {
-            width: 100%;
-            line-height: 2.5;
-        }
-        &__list {
-            width: 100%;
-        & ul {
-            display: flex;
-            justify-content: space-between;
-            }
-        }
-    }
-    @include large {
-        display: flex;
-        &__logo {
-            & a {
-                @include logo-l-xl;
-            }
-        }
-        &__container {
-            width: 100%;
-            line-height: 2.5;
-        }
-        &__list {
-            width: 100%;
-        & ul {
-            display: flex;
-            justify-content: space-between;
-            }
-        }
-    } 
-    @include x-large {
-        display: flex;
-        &__logo {
-            & a {
-               @include logo-l-xl;
-            }
-        }
-        &__container {
-            width: 100%;
-            line-height: 2.5;
-        }
-        &__list {
-            width: 100%;
-        & ul {
-            display: flex;
-            justify-content: space-between;
-            }
-        }
-    } 
 }

@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        background: $color-greymedium;
+        background: $color-greylight;
         width: 100%;
         height: 100%;
         top: 0em;
@@ -142,13 +142,14 @@
         visibility: hidden;
     }
 }
+
 /*HEART ANIMATION*/
 .heart{ 
     position: absolute;
     &--empty{
         width: 27px;
         z-index:1;
-        fill: white;
+        fill: $color-greylight;
         stroke: black;
     }
     &:hover{
@@ -167,5 +168,6 @@
         transition: all 0.7s;
     }
 }
+
 
    

@@ -29,39 +29,39 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background-color: $color-greymedium;
-    padding-bottom: 20px;
+    background-color: $color-greylight;
+    padding-bottom: 35px;
     &__title {
         width: 100%;
-        padding: 6% 0 0 6%;
+        padding: 6% 0 0 7%;
         margin-top: -86px;
         font-family: $font-title;
         font-size: 25px;
-        background-color: $color-greymedium;
+        background-color: $color-greylight;
         border-radius: 45px 45px 0 0;   
     }
     &__heart {
         position: relative;
         display: flex;
         justify-content: flex-end;
-        bottom: 62px;
-        right: 45px;
-        font-size: 30px;
+        bottom: 55px;
+        right: 60px;
     }
     &__dishes {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 0 3%;
-        background-color: $color-greymedium;
+        padding: 0 4%;
+        /*background-color: $color-greylight;*/
     }
     &__details {
         width: 100%;
+        margin-bottom: 20px;
     }
     &__title2 {
         position: relative;
         width: 100%;
-        margin: 6% 0 5% 3%;
+        margin: 1% 0 6% 3%;
         font-size: 17px; 
         font-weight: normal;
         &::before {
@@ -103,7 +103,7 @@
                 overflow: hidden;       
             }
             & span {
-                margin-right: 3em;
+                margin-right: 4em;
             }
             & .menus__checking {
                 transform: translateX(0%);
@@ -112,6 +112,7 @@
                 transform: rotate(360deg);
             }
         }
+
         & a {
             display: flex;
             flex-wrap: wrap;
@@ -146,7 +147,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 18%;
+        width: 15%;
         height: 100%;
         background-color: $color-tertiary;
         border-radius: 0px 20px 20px 0;
@@ -155,37 +156,26 @@
         & i {
             margin: auto;
             font-size: 25px;
-            color: white;
+            color: $color-white;
             transition: transform 0.5s;
         }
     }
     @include small {
-        &__title {
-            padding: 4% 0 0 5%;
-        }
         &__details {
             width: 100%;
         } 
-        &__title2 {
-            margin: 5% 0 5% 2%; 
-        }
     }
     @include medium {
         width: unset;
         margin: 0 3%;
         &__title {
-            padding: 3% 0 0 3%;
+            padding: 5% 0 0% 7%;
         }
-        &__dishes {
-            padding: 0 2%;
-            flex-wrap: unset;
-            flex-wrap: wrap;
-        } 
-        &__details {
-            width: 100%;
-        } 
+        &__heart {
+            bottom: 45px;
+        }
         &__title2 {
-            margin-left: 2%;
+            margin: 1% 0 3% 3%; 
         }
     }
     @include large {
@@ -209,9 +199,6 @@
         &__details {
             width: 31%;
         } 
-        &__title2 {
-            margin-left: 3%;
-        }
     }
     @include x-large {
         width: unset;
@@ -234,9 +221,6 @@
         &__details {
             width: 31%;
         } 
-        &__title2 {
-            margin-left: 3%;
-        }
     } 
 }
  
