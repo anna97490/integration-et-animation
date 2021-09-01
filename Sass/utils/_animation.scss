@@ -1,6 +1,6 @@
 /*LOADER ANIMATION*/
 .loader {
-    z-index: 20;
+    z-index: 30;
     height: 100%;
     opacity: 1;
     margin: auto;
@@ -11,6 +11,9 @@
     bottom: 0;
     animation: charging 3s linear;
     visibility: hidden;
+    /*& img {
+        color: blue;
+    }*/
     &__spinner {
         display: flex;
         justify-content: center;
@@ -22,11 +25,14 @@
         top: 0em;
         left: 0em;
         overflow: hidden;
+        & img {
+            
+        }
     }
     &__background {
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         display: inline-block;
         animation: spin 1.3s linear infinite;
     }
@@ -62,61 +68,13 @@
         }
     }
     &__logo {
-        margin-left: 1em;
-        width: 8em;
+        margin-left: 8px;
+        width: 9em;
     }
     &__txt {
         margin-bottom: 10px;
-        margin-left: 8px;
-        font-size: 1em;
-    }
-    @include small {
-        &__background {
-            width: 120px;
-            height: 120px;
-        }
-        &__logo {
-            width: 15em;
-        }
-        &__txt {
-            font-size: 3em;
-        }
-    }
-    @include medium {
-        &__background {
-            width: 120px;
-            height: 120px;
-        }
-        &__logo {
-            width: 15em;
-        }
-        &__txt {
-            font-size: 3em;
-        }
-    }
-    @include large {
-        &__background {
-            width: 120px;
-            height: 120px;
-        }
-        &__logo {
-            width: 15em;
-        }
-        &__txt {
-            font-size: 3em;
-        }
-    }
-    @include x-large {
-        &__background {
-            width: 120px;
-            height: 120px;
-        }
-        &__logo {
-            width: 15em;
-        }
-        &__txt {
-            font-size: 3em;
-        }
+        margin-left: 2px;
+        font-size: 2em;
     }
 }
 

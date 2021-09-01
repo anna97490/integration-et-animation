@@ -6,10 +6,10 @@
         margin: 0;
         padding-top: 20px;
         font-family: $font-title;
-    }
-    &__logo a {
-        color: $color-white;
+        & a {
+            color: $color-white;
         font-size: 18px;
+        }
     }
     &__list {
         margin-bottom: 10px;
@@ -19,15 +19,15 @@
         &--description {
             padding: 5px 0;
             font-size: 15px;
-        }
-        &--description a {
-            color: $color-white;
-        }
-        &--description i {
-            margin-right: 10px;
+            & a {
+                color: $color-white; 
+            }
+            & i {
+                margin-right: 10px;
             font-size: 14px;
               &:nth-child(1) {
                 width: 18px;
+                } 
             }
         }
     }

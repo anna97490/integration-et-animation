@@ -4,12 +4,13 @@
     &__logo {
         text-align: center;
         margin-top: 22px;
+        
     }
     &__localisation {
         text-align: center;
         font-size: 14px;
         background-color: $color-greymedium;
-        box-shadow: inset 0 3px 4px -4px $color-grey;
+        box-shadow: $shadowinset;
         & i {
             margin-right: 8px;
         }
