@@ -217,7 +217,7 @@ body, footer {
   margin: 0 0 20px 5px;
   font-size: 15px;
 }
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   .explore {
     margin-bottom: 0;
     box-shadow: inset 0 3px 4px -4px #303030;
@@ -304,12 +304,12 @@ body, footer {
     top: 40px;
   }
 }
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .tabs__list::before {
     top: 40px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   .tabs {
     width: 30%;
     padding: 3% 4% 0 4%;
@@ -406,7 +406,7 @@ body, footer {
   background-color: #99E2D0;
   border-radius: 2px;
 }
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .restaurants {
     justify-content: space-between;
   }
@@ -421,7 +421,7 @@ body, footer {
     font-size: 17px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   .restaurants {
     justify-content: space-between;
     width: 70%;
@@ -549,7 +549,7 @@ body, footer {
 }
 .menus__heart {
   position: relative;
-  bottom: 8px;
+  bottom: 11px;
   right: 60px;
 }
 .menus__dishes {
@@ -557,7 +557,6 @@ body, footer {
   flex-wrap: wrap;
   width: 100%;
   padding: 0 4%;
-  /*background-color: $color-greylight;*/
 }
 .menus__details {
   width: 100%;
@@ -666,7 +665,7 @@ body, footer {
     width: 100%;
   }
 }
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .menus {
     width: unset;
     margin: 0 3%;
@@ -678,7 +677,7 @@ body, footer {
     margin: 1% 0 3% 3%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
   .menus {
     width: unset;
     margin: 0 3%;
