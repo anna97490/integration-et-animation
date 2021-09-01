@@ -536,6 +536,9 @@ body, footer {
   padding-bottom: 35px;
 }
 .menus__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 6% 0 0 7%;
   margin-top: -86px;
@@ -546,9 +549,7 @@ body, footer {
 }
 .menus__heart {
   position: relative;
-  display: flex;
-  justify-content: flex-end;
-  bottom: 55px;
+  bottom: 8px;
   right: 60px;
 }
 .menus__dishes {
@@ -672,9 +673,6 @@ body, footer {
   }
   .menus__title {
     padding: 5% 0 0% 7%;
-  }
-  .menus__heart {
-    bottom: 45px;
   }
   .menus__title2 {
     margin: 1% 0 3% 3%;
