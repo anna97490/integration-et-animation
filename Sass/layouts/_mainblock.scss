@@ -5,17 +5,16 @@
     align-items: center;
     text-align: center;
     margin-bottom: 45px;
-    padding-bottom: 35px;
+    padding: 0 14px 35px 14px;
     background-color: $color-greylight;
     & h2 {
-        padding: 35px 15px 15px 15px;
+        padding: 35px 0 15px 0;
         font-size: 18px;
         font-weight: bold;
     }
     & span {
         height: 30px;
-        padding: 0px 26px;
-        margin: 13px 0;
+        margin: 13px 0 20px 0;
         font-size: 17px;
     }
     @include large {
@@ -83,6 +82,10 @@
         color: $color-black;
         border-radius: 15px;
         box-shadow: $shadow1;
+        & i {
+            color: $color-grey;
+            margin: 0 16px 0 12px;
+        }
         &::before {
             content: counter(li);
             position: absolute;
@@ -104,19 +107,19 @@
             text-align: center;
         }
     }
-    &__description i {
-        color: $color-grey;
-        margin: 0 20px 0 12px;
-    }
     @include small {
+        padding: 0 10%;
         &__list {
+            text-align: center;
             &::before {
                 top: 40px;
             }
         }
     }
     @include medium {
+        padding: 0 10%;
         &__list {
+            text-align: center;
             &::before {
                 top: 40px;
             }
@@ -263,7 +266,7 @@
             font-size: 17px;
         }
         &__heart {
-            right: 42px;
+            right: 34px;
         }
     } 
     @include x-large {

@@ -48,7 +48,7 @@
   right: 20px;
   border-radius: 50px;
   border: 5px solid transparent;
-  border-top-color: #FF79DA;
+  border-top-color: #99E2D0;
   opacity: 0.7;
   animation: spin 4.5s linear infinite;
 }
@@ -214,27 +214,26 @@ body, footer {
   align-items: center;
   text-align: center;
   margin-bottom: 45px;
-  padding-bottom: 35px;
+  padding: 0 14px 35px 14px;
   background-color: #f4f4f4;
 }
 .explore h2 {
-  padding: 35px 15px 15px 15px;
+  padding: 35px 0 15px 0;
   font-size: 18px;
   font-weight: bold;
 }
 .explore span {
   height: 30px;
-  padding: 0px 26px;
-  margin: 13px 0;
+  margin: 13px 0 20px 0;
   font-size: 17px;
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1501px) {
   .explore {
     margin-bottom: 0;
     box-shadow: inset 0 3px 4px -4px #303030;
   }
 }
-@media (min-width: 1501px) {
+@media (min-width: 1502px) {
   .explore {
     margin-bottom: 0;
     box-shadow: inset 0 3px 4px -4px #303030;
@@ -298,6 +297,10 @@ body, footer {
   border-radius: 15px;
   box-shadow: 1px 6px 4px #dddddd;
 }
+.tabs__description i {
+  color: #303030;
+  margin: 0 16px 0 12px;
+}
 .tabs__description::before {
   content: counter(li);
   position: absolute;
@@ -314,21 +317,29 @@ body, footer {
   font-size: 17px;
   text-align: center;
 }
-.tabs__description i {
-  color: #303030;
-  margin: 0 20px 0 12px;
-}
 @media (min-width: 481px) and (max-width: 768px) {
+  .tabs {
+    padding: 0 10%;
+  }
+  .tabs__list {
+    text-align: center;
+  }
   .tabs__list::before {
     top: 40px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .tabs {
+    padding: 0 10%;
+  }
+  .tabs__list {
+    text-align: center;
+  }
   .tabs__list::before {
     top: 40px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1501px) {
   .tabs {
     width: 30%;
     padding: 3% 4% 0 4%;
@@ -341,7 +352,7 @@ body, footer {
     top: 21px;
   }
 }
-@media (min-width: 1501px) {
+@media (min-width: 1502px) {
   .tabs {
     width: 30%;
     padding: 3% 4% 0 4%;
@@ -450,7 +461,7 @@ body, footer {
     font-size: 17px;
   }
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1501px) {
   .restaurants {
     justify-content: space-between;
     width: 70%;
@@ -468,10 +479,10 @@ body, footer {
     font-size: 17px;
   }
   .restaurants__heart {
-    right: 42px;
+    right: 34px;
   }
 }
-@media (min-width: 1501px) {
+@media (min-width: 1502px) {
   .restaurants {
     justify-content: space-between;
     width: 70%;
@@ -550,7 +561,7 @@ body, footer {
   height: 100%;
   width: 100%;
 }
-@media (min-width: 1501px) {
+@media (min-width: 1502px) {
   .presentation {
     height: 400px;
   }
@@ -706,7 +717,7 @@ body, footer {
     margin: 1% 0 3% 3%;
   }
 }
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media (min-width: 1025px) and (max-width: 1501px) {
   .menus {
     width: unset;
     margin: 0 3%;
@@ -726,7 +737,7 @@ body, footer {
     width: 31%;
   }
 }
-@media (min-width: 1501px) {
+@media (min-width: 1502px) {
   .menus {
     width: unset;
     margin: 0 3%;
