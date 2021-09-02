@@ -50,6 +50,18 @@
     &__list {
         counter-increment: li;
         white-space: nowrap; 
+        &:nth-of-type(1) {
+            animation: menus 0.8s 0.5s both;
+        }
+        &:nth-of-type(2) {
+            animation: menus 1.1s 0.5s both;
+        }
+        &:nth-of-type(3) {
+            animation: menus 1.4s 0.5s both;
+        }
+        &:nth-of-type(4) {
+            animation: menus 1.7s 0.5s both;
+        }
     }
     & li {
         background-color: $color-greylight;
@@ -82,8 +94,12 @@
             padding: 4px 8px;
             font-size: 13px;
             font-weight: normal;
-            color: white;
-            background-color: #9356DC;
+            @if (lightness($color-black) > 50%) {
+                color: $color-black;
+            } @else {
+                color: $color-white;
+            }
+            background-color: $color-primary;
             border-radius: 50%;
         }
         &--icone {
@@ -159,6 +175,18 @@
         background-color: $color-white;
         box-shadow: $shadow1;
         transition: transform 0.5s;
+        &:nth-of-type(1) {
+            animation: menus 0.8s 0.5s both;
+        }
+        &:nth-of-type(2) {
+            animation: menus 1.1s 0.5s both;
+        }
+        &:nth-of-type(3) {
+            animation: menus 1.4s 0.5s both;
+        }
+        &:nth-of-type(4) {
+            animation: menus 1.7s 0.5s both;
+        }
         &:hover{
             transform:scale(1.02);
             box-shadow: $shadow2;
@@ -171,9 +199,6 @@
         & h3 {
             margin: 15px 0 5px 0;
             font-size: 17px;
-        }
-        & span {
-            font-size: 14px;
         }
     &__heart {
         position: relative;
@@ -193,6 +218,7 @@
     }
     &__info {
         position: relative;
+        font-size: 14px;
         &--new {
         position: absolute;
         width: 80px;
@@ -202,7 +228,11 @@
         text-align: center;
         line-height: 2.1;
         font-weight: bold;
-        color: $color-tertiarydark;
+        @if (lightness($color-tertiary) > 50%) {
+            color: $color-tertiarydark;
+        } @else {
+            color: $color-tertiary;
+        }
         background-color: $color-tertiary;
         border-radius: 2px;
         }
