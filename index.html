@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ohmyfood - Accueil</title>
-    <!--<link rel="shortcut icon" href="./images/logo/ohmyfood@2x.svg">!-->
     <link rel="stylesheet" href="./.style.css">
     <script src="https://kit.fontawesome.com/8145cfb253.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
@@ -13,13 +12,13 @@
 
   <body>
     <!--LOADER SPINNER-->
-    <section class="loader">
+    <div class="loader">
       <div class="loader__spinner">
         <span class="loader__background loader__multicircles"></span>
         <span><img class="loader__logo" src="images/logo/ohmyfood@2xdegrade.png" alt="Logo Ohmyfood"></span>
         <span class="loader__txt">...</span>
       </div>
-    </section>
+    </div>
    
     <!--HEADER-->
     <header class="header">
@@ -36,7 +35,7 @@
     <main>
       <section class="explore">
         <h2>Réservez le menu qui vous convient</h2>
-        <span>Découvrez des restaurants d'exception, sélectionnés par nos soins</span>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
         <a href="#" class="btn">Explorer nos restaurants</a>
       </section>
 
@@ -45,28 +44,22 @@
         <div class="tabs">
           <h2>Fonctionnement</h2>
             <ol>
-              <div class="tabs__list">
-                <a href="#">
-                    <li>
-                      <span class="tabs__description">
-                        <i class="fas fa-solid fa-mobile-alt tabs__description--icone"></i>Choisissez un restaurant</span>
-                    </li>
-                </a>
-              </div>
-              <div class="tabs__list">
-                <a href="#">
-                    <li>
-                      <span class="tabs__description"><i class="fas fa-solid fa-list-ul"></i>Composez votre menu</span>
-                    </li>
-                </a>
-              </div> 
-              <div class="tabs__list">
-                <a href="#">
-                    <li>
-                      <span class="tabs__description"><i class="fas fa-solid fa-store"></i>Dégustez au restaurant</span>
-                    </li>
-                </a>  
-              </div>    
+              <li>
+                <a class="tabs__list" href="#">
+                  <span class="tabs__description">
+                    <i class="fas fa-solid fa-mobile-alt tabs__description--icone"></i>Choisissez un restaurant</span>
+                </a>    
+              </li>
+                <li>
+                  <a class="tabs__list" href="#">
+                    <span class="tabs__description"><i class="fas fa-solid fa-list-ul"></i>Composez votre menu</span>
+                  </a>  
+                </li>
+                <li>
+                  <a class="tabs__list" href="#">  
+                    <span class="tabs__description"><i class="fas fa-solid fa-store"></i>Dégustez au restaurant</span>
+                  </a>  
+                </li>    
             </ol>
         </div>
 
@@ -119,7 +112,7 @@
               <div class="restaurants__heart">
                 <div class="heart">
                   <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
@@ -148,7 +141,7 @@
               <div class="restaurants__heart">
                 <div class="heart">
                   <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
@@ -175,7 +168,7 @@
               <div class="restaurants__heart">
                 <div class="heart">
                   <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
                       <stop offset="0%" stop-color="#9356DC"/>
                       <stop offset="50%" stop-color="#FF79DA"/>
                   </linearGradient>
@@ -184,38 +177,38 @@
                     <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
                       <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                     </svg>
-                </div> 
-                </svg>  
+                </div>  
               </div>
             </a>
           </div>
         </div>
       </section>  
     </main>
-  </body>
 
-  <!--PIED DE PAGE-->
-  <footer class="footer">
-    <div class="footer__logo">
-      <a href="index.html">ohmyfood</a>
-    </div>
-    <div class="footer__container">
-      <div class="footer__list">
-        <ul>
-          <li class="footer__list--description">
-            <a href="#"><i class="fas fa-solid fa-utensils"></i>Proposer un restaurant</a>
-          </li>
-          <li class="footer__list--description">
-            <a href="#">
-              <i class="fas fa-solid fa-hands-helping"></i>Devenir partenaire</a>
-          </li>
-          <li class="footer__list--description">
-            <a href="#">Mentions légales</a>
-          </li>
-          <li class="footer__list--description">
-            <address><a href="mailto:Ohmyfood@yz.org">Contact</a></address>
-          </li>
-        </ul>
+    <!--PIED DE PAGE-->
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="index.html">ohmyfood</a>
       </div>
-</footer>
+      <div class="footer__container">
+        <div class="footer__list">
+          <ul>
+            <li class="footer__list--description">
+              <a href="#"><i class="fas fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            </li>
+            <li class="footer__list--description">
+              <a href="#">
+                <i class="fas fa-solid fa-hands-helping"></i>Devenir partenaire</a>
+            </li>
+            <li class="footer__list--description">
+              <a href="#">Mentions légales</a>
+            </li>
+            <li class="footer__list--description">
+              <address><a href="mailto:Ohmyfood@yz.org">Contact</a></address>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

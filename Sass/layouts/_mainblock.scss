@@ -5,17 +5,17 @@
     align-items: center;
     text-align: center;
     margin-bottom: 45px;
-    padding: 0 14px 35px 14px;
+    padding: 0px 43px 35px 43px;
     background-color: $color-greylight;
     & h2 {
         padding: 35px 0 15px 0;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
     }
-    & span {
+    & p {
         height: 30px;
         margin: 13px 0 20px 0;
-        font-size: 17px;
+        font-size: 18px;
     }
     @include large {
         margin-bottom: 0;
@@ -34,18 +34,19 @@
 //NAVIGATION TABS//
 .tabs {
     width: 100%; 
-    padding: 0 7%;
     margin-bottom: 50px;
+    padding: 0 2em;
     & h2 {
-        margin: 0 0 20px -12px;
+        margin-bottom: 20px;
         font-size: 22px;
-    }  
-    & ol {
-        padding: 0;
     }
-    &__list {
+    & ol {
+        padding: 0 10px;
+    }
+    & li {
         counter-increment: li;
-        white-space: nowrap; 
+        background-color: $color-greylight;
+        border-radius: 15px;
         &:nth-of-type(1) {
             animation: menus 1.8s 2.8s both;
         }
@@ -58,30 +59,30 @@
         &:nth-of-type(4) {
             animation: menus 2.7s 2.8s both;
         }
-        & li {
-            background-color: $color-greylight;
-            border-radius: 15px;
-            &:hover {
-                background-color: $color-primarylight;
-                transform: scale(1.02);
-                box-shadow: $shadow2;
-            }
-            &:hover i {
-                color: $color-primary;
-            }
+        &:hover i {
+            color: $color-primary;
         }
+    }  
+    &__list {
+        padding: 0;  
     }
     &__description { 
         display: block;
         position: relative;
         height: 64px;
         margin-bottom: 20px;
-        padding: 24px;
+        padding: 24px 0px 24px 15px;
         font-size: 14px;
         font-weight: bold;
         color: $color-black;
         border-radius: 15px;
         box-shadow: $shadow1;
+        transition: transform 0.5s ;
+        &:hover {
+            transform: scale(1.02);
+            background-color: $color-primarylight;
+            box-shadow: $shadow2;
+        }
         & i {
             color: $color-grey;
             margin: 0 16px 0 12px;
@@ -127,23 +128,31 @@
     }    
     @include large {
         width: 30%;
-        padding: 3% 4% 0 4%;
+        padding: 3% 2% 0 4%;
         box-shadow: $shadowinset;
-        &__container {
-            padding: 0px 3em;
+        & h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
         }
-        &__list{
+        &__list {
             &::before {
                 top: 21px;
             }
-        } 
+        }
+        &__description {
+            padding: 24px 0px 24px 11px;
+            & i {
+                margin: 0 12px 0 12px;
+            }
+        }
     }
     @include x-large {
         width: 30%;
-        padding: 3% 4% 0 4%;
+        padding: 3% 2% 0 4%;
         box-shadow: $shadowinset;
-        &__container {
-            padding: 0px 3em;
+        &_ h2 {
+            margin-bottom: 20px;
+            font-size: 22px; 
         }
         &__list{
             &::before {
@@ -167,6 +176,9 @@
         margin: 45px 0 6px 0;
         font-size: 22px;
     }
+    & a {
+        width: 100%;
+    }
     &__cards {
         width: 100%;
         height: 260px;
@@ -174,7 +186,6 @@
         border-radius: 13px;
         background-color: $color-white;
         box-shadow: $shadow1;
-        transition: transform 0.5s;
         &:nth-of-type(1) {
             animation: menus 2.4s 2.8s both;
         }
@@ -188,7 +199,6 @@
             animation: menus 3.2s 2.8s both;
         }
         &:hover{
-            transform:scale(1.02);
             box-shadow: $shadow2;
         }
     }

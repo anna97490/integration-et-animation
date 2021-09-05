@@ -24,11 +24,35 @@
             }
             & i {
                 margin-right: 10px;
-            font-size: 14px;
-              &:nth-child(1) {
-                width: 18px;
+                font-size: 14px;
+                &:nth-child(1) {
+                    width: 18px;
                 } 
             }
+        }
+    }
+    @include medium {
+        padding: 2% 4%;
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0px 0 35px;
+        }
+    }
+    @include large {
+        padding: 2% 4%;
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0px 0 35px;
+        }
+    }
+    @include x-large {
+        padding: 2% 4%;
+        &__list ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0px 0 35px;
         }
     }
 }

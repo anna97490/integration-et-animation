@@ -35,6 +35,7 @@
         border: 5px solid transparent;
         border-radius: 70px;
         border-top-color: $color-primary;
+        opacity: 1;
         &::before {
             position: absolute;
             content: "";
@@ -45,7 +46,7 @@
             border-radius: 50px;
             border: 5px solid transparent;
             border-top-color: $color-tertiary;
-            opacity: 0.7;
+            opacity: 1;
             animation: spin 4.5s linear infinite;
         }
         &::after {
@@ -58,7 +59,7 @@
             border-radius: 50px;
             border: 5px solid transparent;
             border-top-color: $color-secondary;
-            opacity: 0.8;
+            opacity: 1;
             animation: spin 10s linear infinite;
         }
     }
@@ -108,7 +109,7 @@
     }
     &:hover{
         .heart--full{
-            opacity:1;
+            opacity: 1;
             transform: scale(1);
         }
     }
