@@ -64,7 +64,7 @@
     &__title2 {
         position: relative;
         width: 100%;
-        margin: 4% 0 6% 3%;
+        margin: 6% 0 6% 3%;
         font-size: 17px; 
         font-weight: normal;
         &::before {
@@ -104,7 +104,7 @@
                 overflow: hidden;       
             }
             & span {
-                margin-right: 4em;
+                margin-right: 5em;
             }
             & .menus__checking {
                 transform: translateX(0%);
@@ -113,7 +113,6 @@
                 transform: rotate(360deg);
             }
         }
-
         & a {
             display: flex;
             flex-wrap: wrap;
@@ -124,7 +123,11 @@
             width: 100%;
             margin-bottom: 5px;
             font-size: 16px;
-            font-weight: bold;  
+            font-weight: bold; 
+           /* &:hover {
+                overflow: hidden;
+                text-overflow: ellipsis;  
+            } */
         }
         &--description {
             display: flex;
@@ -146,9 +149,9 @@
     &__checking {
         display: flex;
         position: absolute;
-        right: 0;
+        right: -1px;
         bottom: 0;
-        width: 15%;
+        width: 64px;
         height: 100%;
         background-color: $color-tertiary;
         border-radius: 0px 20px 20px 0;
@@ -165,27 +168,34 @@
         &__details {
             width: 100%;
         } 
+        &__checking {
+            width: 85px;
+        }
+        &__cards {
+            &:hover span {
+                margin-right: 6em;
+            }
+        }
     }
     @include medium {
-        width: unset;
-        margin: 0 3%;
         &__title {
             padding: 5% 0 0% 7%;
         }
         &__title2 {
             margin: 1% 0 3% 3%; 
         }
+        &__checking {
+            width: 85px;
+        }
+        &__cards {
+            &:hover span {
+                margin-right: 6em;
+            }
+        }
     }
     @include large {
         width: unset;
         margin: 0 3%;
-        &__cards {
-            &:hover {
-                & span {
-                    margin-right: 5em; 
-                }
-            }
-        }
         &__title {
             padding: 3% 0 0 3%;
         }
@@ -201,13 +211,6 @@
     @include x-large {
         width: unset;
         margin: 0 3%;
-        &__cards {
-            &:hover {
-                & span {
-                    margin-right: 5em; 
-                }
-            }
-        }
         &__title {
             padding: 3% 0 0 3%;
         }

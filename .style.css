@@ -650,7 +650,7 @@ body, footer {
 .menus__title2 {
   position: relative;
   width: 100%;
-  margin: 4% 0 6% 3%;
+  margin: 6% 0 6% 3%;
   font-size: 17px;
   font-weight: normal;
 }
@@ -692,7 +692,7 @@ body, footer {
   overflow: hidden;
 }
 .menus__cards:hover span {
-  margin-right: 4em;
+  margin-right: 5em;
 }
 .menus__cards:hover .menus__checking {
   transform: translateX(0%);
@@ -711,6 +711,10 @@ body, footer {
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
+  /* &:hover {
+       overflow: hidden;
+       text-overflow: ellipsis;  
+   } */
 }
 .menus__cards--description {
   display: flex;
@@ -731,9 +735,9 @@ body, footer {
 .menus__checking {
   display: flex;
   position: absolute;
-  right: 0;
+  right: -1px;
   bottom: 0;
-  width: 15%;
+  width: 64px;
   height: 100%;
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0;
@@ -750,26 +754,31 @@ body, footer {
   .menus__details {
     width: 100%;
   }
+  .menus__checking {
+    width: 85px;
+  }
+  .menus__cards:hover span {
+    margin-right: 6em;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  .menus {
-    width: unset;
-    margin: 0 3%;
-  }
   .menus__title {
     padding: 5% 0 0% 7%;
   }
   .menus__title2 {
     margin: 1% 0 3% 3%;
   }
+  .menus__checking {
+    width: 85px;
+  }
+  .menus__cards:hover span {
+    margin-right: 6em;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1501px) {
   .menus {
     width: unset;
     margin: 0 3%;
-  }
-  .menus__cards:hover span {
-    margin-right: 5em;
   }
   .menus__title {
     padding: 3% 0 0 3%;
@@ -787,9 +796,6 @@ body, footer {
   .menus {
     width: unset;
     margin: 0 3%;
-  }
-  .menus__cards:hover span {
-    margin-right: 5em;
   }
   .menus__title {
     padding: 3% 0 0 3%;
