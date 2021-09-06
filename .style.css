@@ -625,9 +625,12 @@ body, footer {
   padding: 6% 0 0 7%;
   margin-top: -86px;
   font-family: "Shrikhand", cursive;
-  font-size: 25px;
+  font-size: 21px;
   background-color: #f4f4f4;
   border-radius: 45px 45px 0 0;
+}
+.menus__title h1 {
+  padding-right: 64px;
 }
 .menus__heart {
   position: relative;
@@ -662,7 +665,6 @@ body, footer {
 .menus__cards {
   position: relative;
   overflow: hidden;
-  white-space: nowrap;
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
@@ -718,6 +720,9 @@ body, footer {
 }
 .menus__cards--description p {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menus__cards--description span {
   font-weight: bold;
