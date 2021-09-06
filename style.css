@@ -98,6 +98,7 @@
     visibility: hidden;
   }
 }
+
 /*HEART ANIMATION*/
 .heart {
   position: absolute;
@@ -133,6 +134,7 @@
     opacity: 100%;
   }
 }
+
 /* GENERAL SETTINGS */
 body {
   margin: 0;
