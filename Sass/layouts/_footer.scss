@@ -5,7 +5,6 @@
     &__logo {
         margin: 0;
         padding-top: 20px;
-        font-family: $font-title;
         & a {
             color: $color-white;
             font-size: 21px;
@@ -36,7 +35,7 @@
         &__list ul {
             display: flex;
             justify-content: space-between;
-            padding: 0 0px 0 35px;
+            padding: 0 0 0 35px;
         }
     }
     @include large {
@@ -44,7 +43,7 @@
         &__list ul {
             display: flex;
             justify-content: space-between;
-            padding: 0 0px 0 35px;
+            padding: 0 0 0 35px;
         }
     }
     @include x-large {
@@ -52,7 +51,7 @@
         &__list ul {
             display: flex;
             justify-content: space-between;
-            padding: 0 0px 0 35px;
+            padding: 0 0 0 35px;
         }
     }
 }

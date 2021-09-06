@@ -1,6 +1,9 @@
+/*PAGES MENUS*/
 .main {
     margin: auto;
 }
+
+/*HEADER MENUS*/
 .header2 {
     position: relative;
     text-align: center;
@@ -14,6 +17,8 @@
         color: $color-grey;
     }
 }
+
+/*PRESENTATION IMAGE*/
 .presentation {
     height: 355px;
     &__img {
@@ -24,6 +29,8 @@
         height: 400px;
     }
 }
+
+/*MENUS*/
 .menus {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +92,7 @@
         background-color: $color-white;
         border-radius: 20px;
         box-shadow: $shadow1;
-        &:nth-of-type(1) {
+        &:nth-of-type(1) { // animation menus
             animation: menus 1s 0.5s both;
         }
         &:nth-of-type(2) {
@@ -97,7 +104,7 @@
         &:nth-of-type(4) {
             animation: menus 1.9s 0.5s both;
         }
-        &:hover {
+        &:hover { // animation check menus
             box-shadow: $shadow2;
             & p {
                 text-overflow: ellipsis;
@@ -106,7 +113,7 @@
             & span {
                 margin-right: 5em;
             }
-            & .menus__checking {
+            & .menus__checking { 
                 transform: translateX(0%);
             }
             & i {
