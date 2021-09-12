@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    animation: charging 3s linear;
+    animation: charging 2s linear;
     visibility: hidden;
     &__spinner {
         display: flex;
@@ -29,7 +29,7 @@
         width: 100px;
         height: 100px;
         display: inline-block;
-        animation: spin 1.3s linear infinite;
+        animation: spin 1.5s linear infinite;
     }
     &__multicircles {
         border: 5px solid transparent;
@@ -47,7 +47,7 @@
             border: 5px solid transparent;
             border-top-color: $color-tertiary;
             opacity: 1;
-            animation: spin 4.5s linear infinite;
+            animation: spin 4.7s linear infinite;
         }
         &::after {
             position: absolute;
@@ -60,7 +60,7 @@
             border: 5px solid transparent;
             border-top-color: $color-secondary;
             opacity: 1;
-            animation: spin 10s linear infinite;
+            animation: spin 10.2s linear infinite;
         }
     }
     &__logo {
@@ -68,9 +68,9 @@
         width: 10em;
     }
     &__txt {
-        margin-bottom: 10px;
+        margin-bottom: 9px;
         margin-left: 2px;
-        font-size: 3em;
+        font-size: 2em;
         color: $color-primary;
     }
 }
@@ -107,12 +107,6 @@
         fill: $color-greylight;
         stroke: black;
     }
-    &:hover{
-        .heart--full{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
     &--full{
         width: 27px;
         z-index:2;
@@ -120,7 +114,13 @@
         stroke: url(#gradient);
         opacity: 0;
         transform: scale(0);
-        transition: all 0.7s;
+        transition: all 0.8s;
+    }
+    &:hover{
+        .heart--full{
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
 

@@ -4,18 +4,21 @@
   "description": "P3 : Dynamiser une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:.style.css",
-    "prefix": "postcss ./styles/style.css --use autoprefixer"
+    "sass":"sass --watch ./sass/main.scss:./public/style.css",
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/anna97490/AnnaCousin_3_09082021.git"
   },
   "author": "Anna Cousin",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anna97490/AnnaCousin_3_09082021/issues"
+  },
+  "homepage": "https://github.com/anna97490/AnnaCousin_3_09082021#readme" ,
+  "browserslist": "last 4 versions",
   "dependencies": {
     "sass": "^1.37.5"
-  },
-  "homepage": "" ,
-  "browserslist": "last 4 versions"
+  }
 }

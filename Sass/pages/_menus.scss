@@ -1,7 +1,4 @@
 /*PAGES MENUS*/
-.main {
-    margin: auto;
-}
 
 /*HEADER MENUS*/
 .header2 {
@@ -22,11 +19,38 @@
 .presentation {
     height: 355px;
     &__img {
-        height: 100%;
-        width: 100%;
+        display: none;
+    }
+    &__img2 {
+        @include img-size;
+    }
+    @include medium {
+        &__img {
+            display: unset;
+            @include img-size;
+        }
+        &__img2 {
+            display: none;
+        }
+    }
+    @include large {
+        &__img {
+            display: unset;
+            @include img-size;
+        }
+        &__img2 {
+            display: none;
+        }
     }
     @include x-large {
-        height: 400px;
+        height: 430px;
+        &__img {
+            display: unset;
+            @include img-size;
+        }
+        &__img2 {
+            display: none;
+        }
     }
 }
 
@@ -131,10 +155,6 @@
             margin-bottom: 5px;
             font-size: 16px;
             font-weight: bold; 
-           /* &:hover {
-                overflow: hidden;
-                text-overflow: ellipsis;  
-            } */
         }
         &--description {
             display: flex;
@@ -163,12 +183,12 @@
         background-color: $color-tertiary;
         border-radius: 0px 20px 20px 0;
         transform: translateX(100%);
-        transition: transform 0.2s;
+        transition: transform 0.4s;
         & i {
             margin: auto;
             font-size: 25px;
             color: $color-white;
-            transition: transform 0.5s;
+            transition: transform 0.6s;
         }
     }
     @include small {
