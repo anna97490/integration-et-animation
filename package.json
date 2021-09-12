@@ -1,5 +1,5 @@
 {
-  "name": "annacousin_3_05082021",
+  "name": "annacousin_3_09082021",
   "version": "1.0.0",
   "description": "P3 : Dynamiser une page web avec des animations CSS",
   "main": "index.js",
@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/anna97490/AnnaCousin_3_09082021/issues"
   },
+
   "homepage": "https://github.com/anna97490/AnnaCousin_3_09082021#readme" ,
   "browserslist": "last 4 versions",
   "dependencies": {
