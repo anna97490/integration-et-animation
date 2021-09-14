@@ -106,11 +106,7 @@ main {
             padding: 4px 8px;
             font-size: 13px;
             font-weight: normal;
-            @if (lightness($color-black) > 50%) {
-                color: $color-black;
-            } @else {
-                color: $color-white;
-            }
+            color: $color-white;
             background-color: $color-primary;
             border-radius: 50%;
         }

@@ -1,7 +1,11 @@
 Projet Numéro 3 - OhMyFood!:
 
 Dynamiser une page web avec des animations CSS.
-La cible étant les personnes connectées et pressées, le site sera développé en utilisant l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées. Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires, leur mise en page est libre.
+La cible étant les personnes connectées et pressées, le site sera développé en utilisant l’approche mobile-first. 
+Pour cette raison, seules des maquettes mobiles seront réalisées. Sur tablette et desktop, le site devra s’adapter, 
+mais ces supports n’étant pas prioritaires, leur mise en page est libre.
+
+Le brief complet ici : https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf
 
 
 CAHIER DES CHARGES :
@@ -22,7 +26,8 @@ Header :
 Footer :
 -Le footer est identique sur toutes les pages.
 -Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.
--Effets graphiques et animations : Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS, pas de JavaScript ni de librairie.
+-Effets graphiques et animations : Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront 
+utiliser les animations ou transitions CSS, pas de JavaScript ni de librairie.
 
 CONTRAINTES :
 -Le développement devra se faire en CSS, sans JavaScript.

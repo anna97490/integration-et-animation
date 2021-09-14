@@ -25,7 +25,6 @@
   height: 100%;
   top: 0em;
   left: 0em;
-  overflow: hidden;
 }
 .loader__background {
   position: relative;
@@ -70,12 +69,6 @@
   margin-left: 8px;
   width: 10em;
 }
-.loader__txt {
-  margin-bottom: 9px;
-  margin-left: 2px;
-  font-size: 2em;
-  color: #9356DC;
-}
 
 @keyframes spin {
   0% {
@@ -88,7 +81,7 @@
 @keyframes charging {
   0% {
     visibility: visible;
-    opacity: 0.9;
+    opacity: 1;
   }
   70% {
     opacity: 0.9;
