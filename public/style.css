@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 .loader {
-  z-index: 30;
   height: 100%;
   opacity: 1;
   margin: auto;
