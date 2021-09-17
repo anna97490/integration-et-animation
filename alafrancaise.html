@@ -5,7 +5,7 @@
     <title>Ohmyfood! - À la française</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--CSS-->
-    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/prefixed/style.css">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext" rel="stylesheet">
@@ -26,8 +26,7 @@
         <section class="container">
             <!--PRESENTATION IMAGE-->
             <div class="presentation">
-                <img class="presentation__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image La palette du goût">
-                <img class="presentation__img2" src="images/restaurants/toa-heftiba-DQKerTsQwi0-VersionMobile.jpg" alt="Image La palette du goût">
+                <img class="presentation__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-VersionMobile.jpg" alt="Image La palette du goût">
             </div>
 
             <!--MENUS CONTAINER-->
@@ -39,14 +38,14 @@
                     <div class="menus__heart">
                         <div class="heart">
                             <a href="#">
-                                <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
-                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" stop-color="#9356DC"/>
-                                            <stop offset="50%" stop-color="#FF79DA"/>
-                                    </linearGradient>
+                                <svg class="heart heart__empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
                                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                                 </svg> 
-                                <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                <svg class="heart heart__full" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="50%" stop-color="#FF79DA"/>
+                                    </linearGradient>
                                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                                 </svg>
                             </a>
@@ -60,7 +59,7 @@
                     <div class="menus__details">
                         <h2 class="menus__title2">ENTRÉES</h2>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Tartare de poulpe acidulé</h3>
                                 <div class="menus__cards--description">
                                     <p>Aux zestes d'orange</p>
@@ -70,7 +69,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Velouté de légumes d'antan</h3>
                                 <div class="menus__cards--description">
                                     <p>Carotte, panais, topinambour</p>
@@ -80,7 +79,7 @@
                             </a>
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Soupe à l'oignon</h3>
                                 <div class="menus__cards--description">
                                     <p>Revisitée</p>
@@ -94,7 +93,7 @@
                      <div class="menus__details">
                         <h2 class="menus__title2">PLATS</h2>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Coquilles Saint-Jacques</h3>
                                 <div class="menus__cards--description">
                                     <p>Accompagnées d'une purée de panais</p>
@@ -104,7 +103,7 @@
                             </a>
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Magret de canard</h3>
                                 <div class="menus__cards--description">
                                     <p>Et parmentier de pommes de terre</p>
@@ -114,7 +113,7 @@
                             </a>
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Pigeonneau d’Ille-et-Vilaine</h3>
                                 <div class="menus__cards--description">
                                     <p>Sur son lit de gnocchis aux légumes</p>
@@ -128,7 +127,7 @@
                     <div class="menus__details">
                         <h2 class="menus__title2">DESSERTS</h2>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Pétales de violettes glacés</h3>
                                 <div class="menus__cards--description">
                                     <p>Et purée de noisettes</p>
@@ -138,7 +137,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Fondant au chocolat</h3>
                                 <div class="menus__cards--description">
                                     <p>Revisité</p>
@@ -148,7 +147,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Millefeuille croustillant</h3>
                                 <div class="menus__cards--description">
                                     <p>Myrtilles et pâte d’amande</p>
@@ -182,7 +181,7 @@
                 <a>Mentions légales</a>
               </li>
               <li class="footer__list--description">
-                <address><a href="mailto:Ohmyfood@yz.org">Contact</a></address>
+                <address><a href="mailto:contact@ohmyfood.com">Contact</a></address>
               </li>
             </ul>
           </div>

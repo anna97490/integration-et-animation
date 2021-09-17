@@ -58,16 +58,16 @@ main {
         counter-increment: li;
         background-color: $color-greylight;
         border-radius: 15px;
-        &:nth-child(1) {
+        &:nth-of-type(1) {
             animation: menus 1.8s 2s both;
         }
-        &:nth-child(2) {
+        &:nth-of-type(2) {
             animation: menus 2.1s 2s both;
         }
-        &:nth-child(3) {
+        &:nth-of-type(3) {
             animation: menus 2.4s 2s both;
         }
-        &:nth-child(4) {
+        &:nth-of-type(4) {
             animation: menus 2.7s 2s both;
         }
         &:hover i {
@@ -175,16 +175,16 @@ main {
         background-color: $color-white;
         box-shadow: $shadow1;
         cursor: pointer;
-        &:nth-child(2) {
+        &:nth-of-type(1) {
             animation: menus 1.8s 1.8s both;
         }
-        &:nth-child(3) {
+        &:nth-of-type(2) {
             animation: menus 2.1s 1.8s both;
         }
-        &:nth-child(4) {
+        &:nth-of-type(3) {
             animation: menus 2.4s 1.8s both;
         }
-        &:nth-child(5) {
+        &:nth-of-type(4) {
             animation: menus 2.7s 1.8s both;
         }
         &:hover{
@@ -212,9 +212,6 @@ main {
     }
     &__img {
         height: 72%;
-        &--xl {
-            display: none;
-        } 
         &--s {
             @include img-size;
             border-radius: 13px 13px 0 0;
@@ -249,40 +246,19 @@ main {
         }
         &__img {
            height: 65%;
-           &--xl {
-                display: unset;
-                @include img-size;
-                border-radius: 13px 13px 0 0;
-           }
-           &--s {
-            display: none;
-           }
         }
         &__description {
             font-size: 17px;
         }
     }
     @include large {
-        justify-content: space-between;
-        width: 70%;
-        padding: 0 3% 2% 3%;
-        box-shadow: $shadowinset;
+        @include restaurants-mq;
         &__title {
             margin: 45px 0 8px 0px;
         }
         &__cards {
             width: 30%;
             height: 235px;
-        }
-        &__img {
-            &--xl {
-                display: unset;
-                @include img-size;
-                border-radius: 13px 13px 0 0;    
-            }
-            &--s {
-                display: none; 
-            }   
         } 
         &__description {
             font-size: 17px;
@@ -292,26 +268,13 @@ main {
         }
     } 
     @include x-large {
-        justify-content: space-between;
-        width: 70%;
-        padding: 0 3% 2% 3%;
-        box-shadow: $shadowinset;
+        @include restaurants-mq;
         &__title {
             margin: 45px 0 8px 0px;
         }
         &__cards {
             width: 30%;
             height: 235px;
-        }
-        &__img {
-            &--xl {
-                display: unset;
-                @include img-size;
-                border-radius: 13px 13px 0 0;    
-            }
-            &--s {
-                display: none; 
-            }   
         }
         &__description {
             font-size: 17px;

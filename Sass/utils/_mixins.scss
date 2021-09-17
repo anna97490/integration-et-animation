@@ -35,3 +35,11 @@
     height: 100%;
     width: 100%;
 }
+
+//Restaurants Media Queries large & x-large 
+@mixin restaurants-mq {
+    justify-content: space-between;
+    width: 70%;
+    padding: 0 3% 2% 3%;
+    box-shadow: $shadowinset;
+}

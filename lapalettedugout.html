@@ -5,7 +5,7 @@
         <title>Ohmyfood! - La palette du goût</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--CSS-->
-        <link rel="stylesheet" href="./public/style.css">
+        <link rel="stylesheet" href="./public/prefixed/style.css">
         <!--GOOGLE FONTS-->
         <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext" rel="stylesheet">
@@ -25,8 +25,7 @@
         <section class="container">
             <!--PRESENTATION IMAGE-->
             <div class="presentation">
-                <img class="presentation__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image La palette du goût">
-                <img class="presentation__img2" src="images/restaurants/jay-wennington-N_Y88TWmGwA-VersionMobile.jpg" alt="Image La palette du goût">
+                <img class="presentation__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-VersionMobile.jpg" alt="Image La palette du goût">
             </div>
 
             <!--MENUS CONTAINER-->
@@ -38,14 +37,14 @@
                     <div class="menus__heart">
                         <div class="heart">
                             <a href="#">
-                                <svg class="heart heart--empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
-                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                            <stop offset="0%" stop-color="#9356DC"/>
-                                            <stop offset="50%" stop-color="#FF79DA"/>
-                                    </linearGradient>
+                                <svg class="heart heart__empty" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
                                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                                 </svg> 
-                                <svg class="heart heart--full" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                <svg class="heart heart__full" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#9356DC"/>
+                                        <stop offset="50%" stop-color="#FF79DA"/>
+                                    </linearGradient>
                                     <path d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z"/>
                                 </svg>
                             </a>
@@ -58,7 +57,7 @@
                     <div class="menus__details">
                         <h2 class="menus__title2">ENTRÉES</h2>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Fricassée d'escargot</h3>
                                 <div class="menus__cards--description">
                                     <p>Au piment d'Espelette</p>
@@ -68,7 +67,7 @@
                             </a>
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Foie-gras de canard mi-cuit</h3>
                                 <div class="menus__cards--description">
                                     <p>Et ses copeaux de truffe noire</p>
@@ -78,7 +77,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Oeuf au plat</h3>
                                 <div class="menus__cards--description">
                                     <p>Assaisonné à la truffe sur lit de caviar</p>
@@ -92,7 +91,7 @@
                      <div class="menus__details">
                         <h2 class="menus__title2">PLATS</h2>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Filet de boeuf aux herbes</h3>
                                 <div class="menus__cards--description">
                                     <p>Accompagné de sa ribambelle de légumes</p>
@@ -102,7 +101,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Parmentier de queue de boeuf</h3>
                                 <div class="menus__cards--description">
                                     <p>À la truffe noire sur sa purée de panais</p>
@@ -112,7 +111,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Filet de turbot</h3>
                                 <div class="menus__cards--description">
                                     <p>Aux agrumes</p>
@@ -126,7 +125,7 @@
                     <div class="menus__details">
                         <h2 class="menus__title2">DESSERTS</h2>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Paris-Brest</h3>
                                 <div class="menus__cards--description">
                                     <p>Revisité</p>
@@ -136,7 +135,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Macaron au chocolat d'exception </h3>
                                 <div class="menus__cards--description">
                                     <p>Et glace à la vanille de Madagascar</p>
@@ -146,7 +145,7 @@
                             </a>    
                         </div>
                         <div class="menus__cards">
-                            <a href="#">
+                            <a>
                                 <h3 class="menus__cards--subhead">Mousse au chocolat</h3>
                                 <div class="menus__cards--description">
                                     <p>Au piment d'Espelette et à la truffe noire</p>
@@ -180,7 +179,7 @@
                 <a>Mentions légales</a>
               </li>
               <li class="footer__list--description">
-                <address><a href="mailto:Ohmyfood@yz.org">Contact</a></address>
+                <address><a href="mailto:contact@ohmyfood.com">Contact</a></address>
               </li>
             </ul>
           </div>

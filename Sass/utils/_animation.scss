@@ -93,26 +93,22 @@
 /*HEART ANIMATION*/
 .heart{ 
     position: absolute;
-    &--empty{
+    &__empty {
         width: 27px;
-        z-index:1;
         fill: $color-greylight;
         stroke: black;
     }
-    &--full{
+    &__full {
         width: 27px;
-        z-index:2;
         fill: url(#gradient);
         stroke: url(#gradient);
         opacity: 0;
         transform: scale(0);
         transition: all 0.8s;
     }
-    &:hover{
-        .heart--full{
-            opacity: 1;
-            transform: scale(1);
-        }
+    &:hover .heart__full {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 

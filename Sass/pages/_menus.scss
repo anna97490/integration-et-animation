@@ -19,38 +19,7 @@
 .presentation {
     height: 355px;
     &__img {
-        display: none;
-    }
-    &__img2 {
         @include img-size;
-    }
-    @include medium {
-        &__img {
-            display: unset;
-            @include img-size;
-        }
-        &__img2 {
-            display: none;
-        }
-    }
-    @include large {
-        &__img {
-            display: unset;
-            @include img-size;
-        }
-        &__img2 {
-            display: none;
-        }
-    }
-    @include x-large {
-        height: 430px;
-        &__img {
-            display: unset;
-            @include img-size;
-        }
-        &__img2 {
-            display: none;
-        }
     }
 }
 
@@ -116,6 +85,7 @@
         background-color: $color-white;
         border-radius: 20px;
         box-shadow: $shadow1;
+        cursor: pointer;
         &:nth-of-type(1) { // animation menus
             animation: menus 1s 0.5s both;
         }
@@ -130,12 +100,15 @@
         }
         &:hover { // animation check menus
             box-shadow: $shadow2;
-            & p {
+            & .menus__cards--subhead {
+                overflow: hidden;
                 text-overflow: ellipsis;
-                overflow: hidden;       
+            }
+            & a {
+                width: 82%;
             }
             & span {
-                margin-right: 5em;
+                margin-right: 20px;
             }
             & .menus__checking { 
                 transform: translateX(0%);
@@ -148,13 +121,12 @@
             display: flex;
             flex-wrap: wrap;
             color: $color-black;
-            width: 100%;
         }
         &--subhead {
-            width: 100%;
+            white-space: nowrap;
             margin-bottom: 5px;
-            font-size: 16px;
-            font-weight: bold; 
+            font-size: 1em;
+            font-weight: bold;
         }
         &--description {
             display: flex;
@@ -198,9 +170,10 @@
         &__checking {
             width: 85px;
         }
-        &__cards {
-            &:hover span {
-                margin-right: 6em;
+        &__cards:hover a {
+            width: 100%;
+            & span {
+                margin-right: 84px;
             }
         }
     }
@@ -214,10 +187,11 @@
         &__checking {
             width: 85px;
         }
-        &__cards {
-            &:hover span {
-                margin-right: 6em;
-            }
+        &__cards:hover a {
+            width: 100%;
+            & span {
+                margin-right: 84px;
+            }   
         }
     }
     @include large {
@@ -233,7 +207,10 @@
         } 
         &__details {
             width: 31%;
-        } 
+        }
+        &__cards:hover a {
+            width: 83%;
+        }
     }
     @include x-large {
         width: unset;
@@ -249,6 +226,12 @@
         &__details {
             width: 31%;
         } 
+        &__cards:hover a {
+            width: 100%;
+            & span {
+                margin-right: 60px;
+            }
+        }
     } 
 }
 
