@@ -1,6 +1,6 @@
 Projet Numéro 3 - OhMyFood!:
 
-Rendez-vous sur [Ohmyfood!](https://anna97490.github.io/integration-et-animation/) pour voir mon travail sur ce projet!
+Rendez-vous sur https://anna97490.github.io/integration-et-animation/ pour voir mon travail sur ce projet!
 
 Dynamiser une page web avec des animations CSS.
 La cible étant les personnes connectées et pressées, le site sera développé en utilisant l’approche mobile-first. 
